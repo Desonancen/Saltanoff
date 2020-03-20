@@ -171,6 +171,11 @@ table {
     display: flex;
 }
 
+.justnow__text {
+    margin-left: 70px;
+    margin-right: 150px;
+}
+
 .justnow__title {
     font-size: 60px;
     line-height: 60px;
