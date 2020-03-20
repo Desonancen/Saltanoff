@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5, h6, p, img{
 
 .header__main {
  display: flex;
+ border-bottom: 9px solid rgb(244, 61, 61) ;
 }
 
 .header__left {
@@ -88,7 +89,7 @@ h1, h2, h3, h4, h5, h6, p, img{
 
 .language {
     display:flex;
-    margin-bottom: 57px;
+    margin-bottom: 53px;
 }
 
 .language__item {
@@ -128,5 +129,38 @@ table {
     font-size: 14px;
     font-weight: 300;
     line-height: 18px;
+}
+
+.map {
+    background: url(/img/map.svg) #F3F9FF;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.hot__text {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 141px;
+}
+
+.hot__title {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 500;
+    color:rgb(244, 61, 61);
+
+    margin-bottom: 20px;
+}
+
+.hot__description {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    width: 500px;
+
+    margin: 0 auto;
 }
 
