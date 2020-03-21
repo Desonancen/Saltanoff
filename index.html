@@ -12,14 +12,15 @@
 <body>
         <header class="header__main">
             <div class="header__left">
-                <img src="img/gerb-logo.png" alt="logo" class="header__logo">
-                <h2 class="main__title"> Оренда нерухомості в <span class="yellow">Іспанії</span></h2>
+                <img src="img/logo.svg" alt="logo" class="header__logo">
+                <h2 class="main__title">Аренда недвижимости 
+                        <span class="yellow">в Испании</span></h2>
                 <nav class="main__nav">
                     <ul>
-                        <li class="nav__item">Про нас</li>
-                        <li class="nav__item">Наші послуги</li>
-                        <li class="nav__item">Відгуки</li>
-                        <li class="nav__item">Контакти</li>
+                        <li class="nav__item">О нас</li>
+                        <li class="nav__item">Наши объекты</li>
+                        <li class="nav__item">Отзывы</li>
+                        <li class="nav__item">Контакты</li>
                     </ul>
                 </nav>
                 <div class="line"></div>
@@ -37,18 +38,18 @@
             <div class="header__right">
                 <div class="header__text">
                     <h1 class="header__title">
-                        Найкращі ціни<br> на нерухомість в Іспанії!
+                            Аренда недвижимости
+                            в Испании!
                     </h1>
                     <p class="header__description">
-                        Орендувати нерухомість в Іспанії вам допоможе агентство Saltanoff, ми працюємо на ринку
-                        нерухомості вже більше семи років і можемо гарантувати своїм клієнтам юридичну захищеність угод.
+                            Арендовать недвижимость в Испании вам поможет агентство Saltanoff, мы работаем на рынке недвижимости уже более семи лет и можем гарантировать своим клиентам юридическую защищенность сделок.
                     </p>
                 </div>
                 <form action="main.php" class="main__form">
                     <table>
                         <tr>
                             <th class="form__item">
-                                <label for="town">Місто:</label>
+                                <label for="town">Город:</label>
                                 <select name="town" id="town">
                                     <option value=""></option>
                                     <option value=""></option>
@@ -57,7 +58,7 @@
                                 </select>
                             </th>
                             <th class="form__item">
-                                <label for="type_of_property">Тип нерухомості:</label>
+                                <label for="type_of_property">Тип недвижимости:</label>
                                 <select name="type_of_property" id="type_of_property">
                                     <option value=""></option>
                                     <option value=""></option>
@@ -65,7 +66,7 @@
                                 </select>
                             </th>
                             <th class="form__item">
-                                <label for="price_for">Ціна (від):</label>
+                                <label for="price_for">Цена (от):</label>
                                 <select name="price_for" id="price_for">
                                     <option value=""></option>
                                     <option value=""></option>
@@ -73,7 +74,7 @@
                                 </select>
                             </th>
                             <th class="form__item">
-                                <label for="price_to">Ціна(до):</label>
+                                <label for="price_to">Цена (до):</label>
                                 <select name="price_to" id="price_to">
                                     <option value=""></option>
                                     <option value=""></option>
@@ -83,7 +84,7 @@
                         </tr>
                         <tr>
                             <th class="form__item">
-                                <label for="square">Площа:</label>
+                                <label for="square">Площадь:</label>
                                 <select name="square" id="square">
                                     <option value=""></option>
                                     <option value=""></option>
@@ -91,7 +92,7 @@
                                 </select>
                             </th>
                             <th class="form__item">
-                                <label for="bedroom_for">Спальні (від):</label>
+                                <label for="bedroom_for">Спальни (от):</label>
                                 <select name="bedroom_for" id="bedroom_for">
                                     <option value=""></option>
                                     <option value=""></option>
@@ -99,7 +100,7 @@
                                 </select>
                             </th>
                             <th class="form__item">
-                                <label for="bedroom_to">Спальні (до):</label>
+                                <label for="bedroom_to">Спальни (до):</label>
                                 <select name="bedroom_to" id="bedroom_to">
                                     <option value=""></option>
                                     <option value=""></option>
@@ -107,7 +108,7 @@
                                 </select>
                             </th>
                             <th class="form__item">
-                                <input type="submit" value="Підібрати об'єкт">
+                                <button type="submit" class="btn main__btn">Подобрать объект</button>   
                             </th>
                         </tr>
                     </table>
@@ -199,16 +200,22 @@
          </form>
      </aside>
      <section class="rent">
+         <img src="/img/footer__map--left.svg" alt="map" class="footer__map--left">
+         <img src="/img/footer__map--right.svg" alt="map" class="footer__map--right">
          <div class="rent__img">
-      <img src="img/gerb-logo.png" alt="logo" class="header__logo">
-      <p class="rent__img--text">Нерухомість в 
-        <span class="yellow">Іспанії</span></p>
+      <img src="img/logo.svg" alt="logo" class="header__logo">
+      <p class="rent__img--text">Нерухомість
+        <span class="yellow"> в Іспанії</span></p>
          </div>
+
+         <div class="rent__line"></div>
     
     <div class="rent__info">
+        <div class="rent__info--top">
         <h2 class="rent__title">Оренда нерухомості в Іспанії</h2>
         <p class="rent__phone">+38 (050) 123 45 67</p>
         <p class="rent__phone yellow">+38 (096) 123 45 67</p>
+    </div>
         <p class="rent__description">Основна спеціалізація нашої організації - реалізація нерухомості в Іспанії. В каталозі представлені безліч пропозицій: зручні квартири в місцях з добре розвиненою інфраструктурою і транспортною розв'язкою, новобудови в декількох хвилинах від пляжу, будинки і вілли, що потопають у зелені, комерційні об'єкти. Середні ціни на комфортабельну квартиру на півдні країни - від 40 до 140 тисяч євро</p>
     </div>
      </section>

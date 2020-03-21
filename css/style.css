@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6, p, img{
     height: 112px;
     width: 112px;
     margin-top: 57px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 .main__title {
@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6, p, img{
     font-size: 30px;
     line-height: 30px;
     color: rgb(244, 61, 61);
-    width: 214px;
+    max-width: 210px;
     margin-bottom: 45px;
 }
 
@@ -456,7 +456,7 @@ table {
 
 .leaf__bottom {
     position: absolute;
-    top: 336px;
+    top: 315px;
     right: -158px;
 }
 
@@ -467,7 +467,7 @@ table {
     background: url(../img/news__bg.jpg) no-repeat center;
     background-size: cover;
     padding: 84px 185px;
-    bottom: 598px;
+    bottom: 681px;
     z-index: 1000;
     right: 20%;
     border-left: 9px solid rgb(244, 61, 61);
@@ -484,6 +484,10 @@ table {
     max-width: 461px;
     margin-left: 41px;
     margin-bottom: 24px;
+}
+
+.news__form {
+    display:flex;
 }
 
 .news__form>input {
@@ -505,4 +509,67 @@ table {
 
 .rent {
     display: flex;
+    position: relative;
+    padding-top: 89px;
+}
+
+.footer__map--left {
+    position: absolute;
+    bottom: -125px;
+}
+
+.footer__map--right {
+    position: absolute;
+    right: 0;
+    top: 21px;
+}
+
+.rent__img {
+    margin: 0 30px 50px 150px;
+}
+
+.rent__img>.header__logo {
+    margin-top: 0;
+}
+
+.rent__img--text {
+    font-size: 30px;
+    line-height: 30px;
+    color: rgb(244, 61, 61);
+    max-width: 180px;
+}
+
+.rent__info {
+    max-width: 826px;
+    padding-top: 10px;
+}
+
+.rent__info--top {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.rent__title {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.rent__phone {
+    margin-left: auto;
+}
+
+.rent__phone .yellow {
+    margin-left: 30px;
+}
+
+.rent__description {
+    color:rgba(0,0,0,0.5);
+}
+
+.rent__line {
+    width: 160px;
+    height: 1px;
+    background-color: rgba(0,0,0,0.2);
+    transform: rotate(90deg);
+    margin-top: 94px;
 }
