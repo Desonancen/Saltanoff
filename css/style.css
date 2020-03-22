@@ -52,6 +52,11 @@ h1, h2, h3, h4, h5, h6, p, img{
     margin-bottom: 45px;
 }
 
+.nav__item-a {
+    text-decoration: none;
+    color: black;
+}
+
 .line {
     margin:20px 0 45px 0;
     width:225px;
@@ -122,6 +127,91 @@ h1, h2, h3, h4, h5, h6, p, img{
     background-color: rgb(245, 186, 33);
     width: 785px;
     margin: 0 142px 241px 138px;
+}
+
+.row__of__items {
+    display: flex;
+}
+
+.row__of__items:first-child {
+    margin-bottom: 25px;
+}
+
+.form__item-select {
+    width: 100%;   
+}
+
+.form__item {
+    position: relative;
+}
+
+.form__item-select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    padding-left: 16px;
+}
+
+.form__item-select:hover {
+    cursor: pointer;
+}
+
+.btn.main__btn {
+    padding: 11px 18px;
+}
+
+.select__form::before {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+
+    position: absolute;
+    top: 18px;
+    right: 16px;
+    z-index: 1;
+
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
+    transform: rotate(135deg);
+
+    cursor: pointer;
+} 
+
+#town {
+    width: 226px;
+    height: 46px;
+}
+
+#type_of_property {
+    width: 198px;
+    height: 46px;
+}
+
+#price_for {
+    width: 131px;
+    height: 46px;
+}
+
+#price_to {
+    width: 131px;
+    height: 46px;
+}
+
+#square {
+    width: 134px;
+    height: 46px;
+}
+
+#bedroom_for {
+    width: 150px;
+    height: 46px;
+}
+
+#bedroom_to {
+    width: 150px;
+    height: 46px;
 }
 
 table {
