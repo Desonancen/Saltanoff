@@ -124,6 +124,53 @@ h1, h2, h3, h4, h5, h6, p, img{
     margin: 0 142px 241px 138px;
 }
 
+.row__of__items {
+    display: flex;
+}
+
+.row__of__items:first-child {
+    margin-bottom: 25px;
+}
+
+.form__item-select {
+    width: 100%;   
+}
+
+#town {
+    width: 226px;
+    height: 46px;
+}
+
+#type_of_property {
+    width: 198px;
+    height: 46px;
+}
+
+#price_for {
+    width: 131px;
+    height: 46px;
+}
+
+#price_to {
+    width: 131px;
+    height: 46px;
+}
+
+#square {
+    width: 134px;
+    height: 46px;
+}
+
+#bedroom_for {
+    width: 150px;
+    height: 46px;
+}
+
+#bedroom_to {
+    width: 150px;
+    height: 46px;
+}
+
 table {
     padding: 20px 32px 32px 32px;
     font-size: 14px;
