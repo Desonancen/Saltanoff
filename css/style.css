@@ -413,7 +413,6 @@ table {
     position: relative;
     padding-top: 203px;
     overflow: hidden;
-    padding-bottom: 304px;
 }
 
 .choose__bg {
@@ -437,7 +436,7 @@ table {
     position: absolute;
     right: 47%;
     top: bottom;
-    bottom: -12px;
+    bottom: -315px;
 }
 
 .choose__title {
@@ -454,11 +453,6 @@ table {
     margin-bottom: 134px;
 }
 
-.leaf__bottom {
-    position: absolute;
-    top: 315px;
-    right: -158px;
-}
 
 /*news*/
 
@@ -467,7 +461,7 @@ table {
     background: url(../img/news__bg.jpg) no-repeat center;
     background-size: cover;
     padding: 84px 185px;
-    bottom: 681px;
+    bottom: 420px;
     z-index: 1000;
     right: 20%;
     border-left: 9px solid rgb(244, 61, 61);
@@ -510,22 +504,48 @@ table {
 .rent {
     display: flex;
     position: relative;
+    padding-left: 150px;
     padding-top: 89px;
+    overflow: hidden;
+    padding-top: 341px;
+}
+
+
+.leaf__bottom {
+    position: absolute;
+    top: -482px;
+    right: -158px;
 }
 
 .footer__map--left {
     position: absolute;
-    bottom: -125px;
+    bottom: -155px;
+    left: 0;
 }
 
 .footer__map--right {
     position: absolute;
     right: 0;
-    top: 21px;
+    top: -100px;
 }
 
 .rent__img {
-    margin: 0 30px 50px 150px;
+    margin-right: 91px;
+    margin-bottom: 90px;
+    position: relative;
+}
+
+
+.rent__img--text::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    left: 180px;
+    top: 95px;
+    height: 1px;
+    background-color: rgba(0,0,0,0.2);
+    transform: rotate(90deg);
+
 }
 
 .rent__img>.header__logo {
@@ -536,7 +556,7 @@ table {
     font-size: 30px;
     line-height: 30px;
     color: rgb(244, 61, 61);
-    max-width: 180px;
+    max-width: 231px;
 }
 
 .rent__info {
@@ -566,12 +586,57 @@ table {
     color:rgba(0,0,0,0.5);
 }
 
-.rent__line {
-    width: 160px;
-    height: 1px;
-    background-color: rgba(0,0,0,0.2);
-    transform: rotate(90deg);
-    margin-top: 94px;
+.footer__leaf--left {
+    position: absolute;
+    left: -272px;
+}
+
+.footer__leaf--right {
+    position: absolute;
+    right: -113px;
+}
+
+/*footer*/
+
+.main__footer {
+    position: relative;
+}
+
+.footer__wave {
+    background: url(../img/footer__wave.svg);
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    height: 47px;
+    top: -94px;
+    background-size: cover;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 47px;
+    max-width: 1140px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.footer__top>.main__nav>ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 415px;
+}
+
+.facebook {
+    margin-right: 20px;
+}
+
+.copyright {
+    margin-bottom: 50px;
+    max-width: 1140px;
+    margin-left:auto;
+    margin-right: auto;
 }
 
 /*About*/
