@@ -52,6 +52,11 @@ h1, h2, h3, h4, h5, h6, p, img{
     margin-bottom: 45px;
 }
 
+.nav__item-a {
+    text-decoration: none;
+    color: black;
+}
+
 .line {
     margin:20px 0 45px 0;
     width:225px;
