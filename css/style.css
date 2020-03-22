@@ -573,3 +573,295 @@ table {
     transform: rotate(90deg);
     margin-top: 94px;
 }
+
+/*About*/
+
+.about__block {
+    position: relative;
+    overflow: hidden;
+
+    margin-bottom: 300px;
+}
+
+.about{
+    position: relative;
+}
+
+.about__nav{
+    font-family: Museo Cyrl;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    position: relative;
+
+    margin-top: 50px;
+    margin-right: 105px;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.nav__1{
+    margin-right: 20px;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    z-index: 1000000;
+}
+
+.nav__1::before{
+    content:"";
+    height: 8px;
+    width: 1.1px;
+    background: black;
+    position: absolute;
+    top: 2.5px;
+    right: -28px;
+
+    transform: rotate(-45deg);
+}
+
+.nav__1::after{
+    content:"";
+    height: 8px;
+    width: 1.1px;
+    background: black;
+    position: absolute;
+    top: 8px;
+    right: -28px;
+
+    transform: rotate(45deg);
+}
+
+.nav__2{
+    color: #F43D3D;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+.about__path-1{
+    position: absolute;
+    top: 320px;
+    right: 0;
+
+    z-index: 10000;
+}
+
+.about__path-2{
+    position: absolute;
+    top: 70px;
+    left: -230px;
+
+    transform: rotate(110deg);
+}
+
+
+.t-espania {
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 162, 178);
+    
+    font-family: Museo Cyrl;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 175px;
+    line-height: 200px;
+    letter-spacing: 0.2em;
+
+    opacity: 0.8;
+
+    position: absolute;
+    top: 181px;;
+    left: 101px;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.about__description{
+    float: right;
+    width: 893px;
+    height: 641px;
+    background: #F5BA21;
+    position: relative;
+
+    margin-top: 223px;
+    margin-bottom: 70px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.about__description-flag{
+    position: absolute;
+    top: 50px;
+    right: 52px;
+}
+
+.about__description-inner{
+   justify-self: center;
+   align-self: center;
+}
+
+.about__description-headline{
+    font-family: Museo Cyrl;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+
+    margin-bottom: 30px
+    
+}
+
+.about__description-tittle{
+    font-family: Museo Cyrl;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+
+    margin-bottom: 25px;
+}
+
+.about__description-subtittle{
+    font-family: Museo Cyrl;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.about__img{
+    position: absolute;
+    left: -397px;;
+    bottom: -82px;
+}
+
+
+/*Services*/
+
+.services{
+    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 50px;
+    padding-bottom: 330px;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.s__headline{
+    font-family: Museo Cyrl;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+
+    color: #F43D3D;
+}
+
+.s_left{
+    position: relative;
+}
+
+.s__image-2{
+    position: absolute;
+    top: 315px;
+    left: 205px;
+}
+
+.s_right-item {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+
+
+    margin-top: 20px;
+    padding-left: 34px;
+    position: relative;
+}
+
+.s_right-item::before {
+    content: "";
+    display: block;
+
+    position: absolute;
+    top: 5px;
+    left: 0;
+    z-index: 1;
+
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #F5BA21;
+}
+
+.s_right-item::after {
+    content: "";
+    display: block;
+
+    position: absolute;
+    top: 1px;
+    left: 7px;
+    z-index: 1;
+
+    width: 8.5px;
+    height: 16px;
+
+    border-top: 1.5px solid rgb(244, 61, 61);
+    border-left: 1.5px solid rgb(244, 61, 61);
+
+    transform: rotate(220deg);
+}
+
+.s_right{
+    margin-top: 95px;
+    overflow: hidden;
+}
+
+.s_vector-1{
+    position: absolute;
+    top: -370px;
+    right: -185px;
+    z-index: 10000;
+}
+
+.s_vector-2{
+    position: absolute;
+    bottom: 0;
+    right: -185px;
+    z-index: 10000;
+}
+
+.s_vector-3{
+    position: absolute;
+    top: 0;
+    left: -200px;
+}
+
+.s_vector-4{
+    position: absolute;
+    bottom: -300px;
+    left: -200px;
+}
