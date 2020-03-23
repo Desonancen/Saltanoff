@@ -23,31 +23,6 @@ ul {
 h1, h2, h3, h4, h5, h6, p, img{
     margin: 0;
 }
-body {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-
-ul {
-    list-style: none;
-}
-
-h1, h2, h3, h4, h5, h6, p, img{
-    margin: 0;
-}
 
 .header__main {
  display: flex;
@@ -204,6 +179,11 @@ h1, h2, h3, h4, h5, h6, p, img{
     background-size: cover;
 }
 
+.header__text {
+    color:#fff;
+    padding-top: 1px;
+}
+
 .header__title {
     margin: 131px 219px 30px 138px;
 
@@ -220,7 +200,9 @@ h1, h2, h3, h4, h5, h6, p, img{
 .main__form {
     background-color: rgb(245, 186, 33);
     width: 785px;
-    margin: 0 142px 241px 138px;
+    position: absolute;
+    left: 37%;
+    top:50%;
 }
 
 .row__of__items {
