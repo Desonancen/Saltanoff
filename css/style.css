@@ -1167,3 +1167,98 @@ h1, h2, h3, h4, h5, h6, p, img{
 .catalog__sort__by-item:hover{
     color: #F43D3D;
 }
+
+
+
+/*Contacts*/
+
+.contacts{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 150px;
+}
+
+.contacts__headline{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.contacts__block{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contacts__block-l{
+    width: 585px;
+    height: 582px;
+    justify-self: end;
+    background: url(../img/contacts_img/contacts-img.jpg) no-repeat center;
+    background-size: cover;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.grid{
+    justify-self: center;
+    align-self: center;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 30px
+}
+
+.contacts__block-r{
+    width: 555px;
+    height: 582px;
+    background:  #F5BA21;
+}
+
+.c_block-1_item{
+    color: #fff;
+    display: flex;
+}
+
+.c_block-1_item img{
+    margin-right: 20px;
+}
+
+.c__block-r_headline{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-family: Museo Cyrl;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+
+    color: #fff;
+}
+
+#contactform{
+    text-align: center;
+}
+
+.form-1{
+    width: 358px;
+    height: 46px;
+    margin-bottom: 22px;
+    padding-left: 16px;
+    color: black;
+    border: none;
+}
+
+.form-2{
+    padding: 16px;
+    width: 358px;
+    height: 153px;
+    margin-bottom: 26px;
+    resize: none;
+}
+
+.form_btn{
+    padding: 12px 42px;
+}
