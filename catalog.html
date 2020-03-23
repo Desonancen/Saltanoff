@@ -35,7 +35,8 @@
                 </ul>
             </div>
 
-            <div class="header__right">
+            <div class="header__right" style="background: url(img/catalog_img/background.jpg)
+            no-repeat center;background-size: cover;">
                 <div class="header__text">
                     <h1 class="header__title">
                             Аренда недвижимости
@@ -123,17 +124,92 @@
             </div>
         </header> 
 <div class="container">
-     <section class="hot">
+
+     <section class="catalog">
          <img src="img/leaf 1.svg" alt="leaf" class="leaf__left">
          <img src="img/leaf 2.svg" alt="leaf" class="leaf__right">
-         <div class="hot__text">
-         <h1 class="hot__title headline">
-                Испания. Горячие предложения
-         </h1>
-         <p class="hot__description">Испанское королевство - одно из самых привлекательных мест 
-                для жизни в Европе вот уже не одно десятилетие.</p>
+        
+         <div class="_nav">
+            <a href="index.html" class="nav__1">Главная</a>
+            <a href="#" class="nav__2">Наші об'єкти</a>
         </div>
          
+        <h1 class="catalog__headline headline">Каталог домов</h1>
+        <p class="catalog__counter subtittle">Знайдено 15 об'єктів</p>
+
+        <form action="main.php" class="catalog__filter">
+            <table class="table__filter">
+                <tr class="calalog__row__of_items">
+                    <th class="form__item">
+                        <div class="select__form">
+                            <select class="form__item-select" name="town" id="town">
+                                <option value="">Город:</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </div>    
+                    </th>
+                    <th class="form__item">
+                        <div class="select__form">
+                        <select class="form__item-select" name="type_of_property" id="type_of_property">
+                            <option value="">Тип недвижимости:</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                        </div>
+                    </th>
+                    <th class="form__item">
+                        <div class="select__form">
+                        <select class="form__item-select" name="square" id="square">
+                            <option value="">Площадь:</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    </th>
+                    <th class="form__item">
+                        <div class="select__form">
+                        <select class="form__item-select" name="bedroom_for" id="bedroom_for">
+                            <option value="">Спальни (от):</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    </th>
+                    <th class="form__item">
+                        <div class="select__form">
+                        <select class="form__item-select" name="bedroom_to" id="bedroom_to">
+                            <option value="">Спальни (до):</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    </th>
+                    <th>
+                        <label for="id_1" class="label">
+                            <input class="checkbox-1" name="hot" type="checkbox" value="hot" id="id_1">
+                            <div class="filter__check"></div>
+                            <span class="filter__check-t">hot</span>
+                        </label>
+                    </th>
+                </tr>
+            </table>
+        </form>
+
+        <div class="catalog__sort">
+            <ul class="catalog__sort__by-items">
+                <li class="catalog__sort__by subtittle">Сортувати по:</li>
+                <li class="catalog__sort__by-item subtittle">Останні будинки</li>
+                <li class="catalog__sort__by-item subtittle">Ціна по спаданню</li>
+                <li class="catalog__sort__by-item subtittle">Ціна по зростанню</li>
+            </ul>
+        </div>
+
+
+
+
+
         <div class="propositions">
                 <img src="./img/proposition__map.svg" alt="map" class="proposition__map"> 
                 <img src="./img/leaf-left.svg" alt="leaf" class="first__leaf">
@@ -173,22 +249,11 @@
         </div>
             <a class="btn see__more">Больше объектов</a>
      </section>
-     <section class="justnow">
-         <img src="./img/justnow__map.svg" alt="map" class="justnow__map">
-         <img src="img/map__Spain.png" alt="Spain" class="justnow__img">
-         <div class="justnow__text">
-             <h2 class="justnow__title">Лучшая возможнсть
-                    прямо сейчас!</h2>
-                    <img src="img/justnow__maps.svg" alt="map" class="justnow__maps">
-             <p class="justnow__description">Компания «Saltanoff» успешно работает на рынке испанской недвижимости уже более 10 лет!</p>
-             <ul>
-                 <li class="justnow__item">К каждому заказу мы относимся с полной ответственностью и внимательно следите именно за каждым этапом, чтобы клиент всегда оставался довольным</li>
-                 <li class="justnow__item">Обладая обширной базой недвижимости в первоклассных районах побережья Коста-Бланка</li>
-                 <li class="justnow__item">Предлагаем своим клиентам только самые выгодные варианты недвижимости</li>
-                 <li class="justnow__item">На 100% прислушиваемся к пожеланиям клиента</li>
-             </ul>
-         </div>
-     </section>
+     
+
+
+
+
      <section class="choose">
          <img src="img/leaf__top.svg" alt="leaf" class="leaf__top">
          <img src="img/choose__wave.svg" alt="wave" class="choose__wave">

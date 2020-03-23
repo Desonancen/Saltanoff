@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6, p, img{
     height: 46px;
 }
 
-table {
+.table {
     padding: 20px 32px 32px 32px;
     font-size: 14px;
     font-weight: 300;
@@ -287,7 +287,7 @@ table {
 
 .proposition {
     width: 555px;
-    height:549px;
+    height:547px;
     z-index: 1000;
 }
 
@@ -409,7 +409,6 @@ table {
     display: inline-block;
     margin-left: 45%;
 }
-
 
 /* justnow */
 
@@ -742,7 +741,7 @@ table {
     position: relative;
 }
 
-.about__nav{
+._nav{
     font-family: Museo Cyrl;
     font-style: normal;
     font-weight: 300;
@@ -752,7 +751,7 @@ table {
     position: relative;
 
     margin-top: 50px;
-    margin-right: 105px;
+    text-align:center;
 
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -1019,4 +1018,152 @@ table {
     position: absolute;
     bottom: -300px;
     left: -200px;
+}
+
+
+/*catalog*/
+
+.catalog{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.headline{      /*Класс для всех красных заголовков*/
+    font-family: Museo Cyrl;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+
+    color: #F43D3D;
+}
+
+.subtittle{     /*Класс для всех подтекстов*/
+    font-family: Museo Cyrl;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.catalog__headline{
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.catalog__counter{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.catalog__filter {
+    background-color: #F5BA21;;
+    max-width: 1135px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.table__filter{
+    padding: 16px 27px 16px 16px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+.filter__check-t{
+    font-family: Museo Cyrl;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 3px;
+    right: -42px;
+
+    color: #F43D3D;
+}
+
+.label{
+  position: relative;
+}
+
+.checkbox-1{
+    display: none;
+}
+
+.filter__check{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    box-shadow: 0 0 2px #fff;
+    position: relative;
+    margin-left: 27px;
+}
+
+.filter__check::before{
+    content:"";
+    width: 1.5px;
+    height: 14px;
+    background-color: #F43D3D;
+    position: absolute;
+    bottom: 0.5px;
+    right: 4px;
+    transform: rotate(30deg);
+    border-radius: 50%;
+    transition: .2s;
+    opacity: 0;
+}
+
+.filter__check::after{
+    content:"";
+    width: 1.5px;
+    height: 8px;
+    background-color: #F43D3D;
+    position: absolute;
+    bottom:0px;
+    left: 4px;
+    transform: rotate(-50deg);
+    border-radius: 50%;
+    transition: .1s;
+    opacity: 0;
+}
+
+.checkbox-1:checked + 
+.filter__check::before{
+    opacity: 1;
+}
+
+.checkbox-1:checked + 
+.filter__check::after{
+    opacity: 1;
+}
+
+
+.catalog 
+.catalog__sort__by-items{
+    display: flex;
+}
+
+.catalog__sort__by-item{  
+    font-weight: normal !important;
+    transition: .2s;
+}
+
+.catalog__sort__by,.catalog__sort__by-item{
+    display:inline;
+    margin-right: 25px;
+    z-index: 1000000;
+}
+
+.catalog__sort{
+    max-width: 1135px;
+    margin: auto;
+    margin-bottom: 51px;
+}
+
+.catalog__sort__by-item:hover{
+    color: #F43D3D;
 }
