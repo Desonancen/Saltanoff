@@ -249,7 +249,7 @@ h1, h2, h3, h4, h5, h6, p, img{
 .leaf__right {
     position: absolute;
     right: -114px;
-    bottom: 694px;
+    top: -300px;
 }
 
 .hot__text {
