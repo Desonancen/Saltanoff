@@ -85,7 +85,7 @@
     border-top: 1.5px solid #fff;
     border-left: 1.5px solid #fff;
     transform: rotate(135deg);
-    
+    opacity: .5;
 }
 
 .slick-prev
