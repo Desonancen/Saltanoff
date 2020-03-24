@@ -919,7 +919,7 @@ h1, h2, h3, h4, h5, h6, p, img{
 
 
 .about__description{
-    float: right;
+
     width: 893px;
     height: 641px;
     background: #F5BA21;
@@ -927,6 +927,7 @@ h1, h2, h3, h4, h5, h6, p, img{
 
     margin-top: 223px;
     margin-bottom: 70px;
+    margin-left: auto;
 
     display: grid;
     grid-template-columns: 1fr;
@@ -1357,8 +1358,6 @@ h1, h2, h3, h4, h5, h6, p, img{
     border-color: #F43D3D;
 }
 
-
-
 .house__description {
     max-width: 1140px;
     margin: 0 auto;
@@ -1367,4 +1366,85 @@ h1, h2, h3, h4, h5, h6, p, img{
 
 .text__block {
     margin-bottom: 30px;
+}
+
+/*Reviews*/
+
+.reviews__block {
+    position: relative;
+    overflow: hidden;
+}
+
+._nav {
+    padding-top: 50px;
+}
+
+.review__maintext {
+    text-align: center;
+    margin-top: 98px;
+}
+
+.review__title {
+    font-size: 60px;
+    line-height: 60px;
+    color:rgb(244, 61, 61);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.review__description {
+    max-width: 439px;
+    margin: 0 auto;
+}
+
+.review__sliders {
+    margin-left: 150px;
+}
+
+.slide__img {
+    max-width: 509px;
+    z-index: 1000;
+    position: relative;
+}
+
+.slide__text {
+    max-width: 942px;
+    z-index: 10;
+    background-color: rgb(245, 186, 33);
+    min-height: 637px;
+    text-align: center;
+    position: absolute;
+    margin-top: 66px;
+    left: 38%;
+    top: 34%;
+}
+
+.comment {
+    margin:146px 183px 188px 188px;
+}
+
+.selected__text {
+    max-width: 522px;
+    text-align: left;
+}
+
+.comment__name {
+    text-align: start;
+    margin-top: 50px;
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 8px;
+}
+
+.comment__date {
+    font-size: 14px;
+    text-align: start;
+}
+
+.review__map {
+    background: url(../img/review__map.svg);
+    position: absolute;
+    z-index: 1000;
+    top: 46%;
+    right: 2%;
 }
