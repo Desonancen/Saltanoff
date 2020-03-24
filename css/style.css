@@ -1338,3 +1338,25 @@ h1, h2, h3, h4, h5, h6, p, img{
 .form_btn{
     padding: 12px 42px;
 }
+
+
+.house__info{
+    position:relative;
+    overflow: hidden;
+}
+
+.fotorama__wrap{
+    margin: 0 auto;
+}
+
+.fotorama__thumb{
+    border: 1px #00afea solid;
+}
+
+.fotorama__thumb-border{
+    border-color: #F43D3D;
+}
+
+.inner{
+
+}
