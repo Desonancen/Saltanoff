@@ -167,7 +167,7 @@ a {
     background-color: #F5BA21;
     height: 12px;
     width: 12px;
-    
+    margin: -1px 0;
 
 }
 
@@ -1392,6 +1392,10 @@ a {
     margin-bottom: 45px;
 }
 
+.house__info>._nav>.nav__2 {
+    color:#000000;
+}
+
 .nav__3 {
     color: #F43D3D;
     margin-left: 30px;
@@ -1433,8 +1437,28 @@ a {
     border: 1px #00afea solid;
 }
 
+.fotorama__img {
+    top:0!important;
+}
+
 .fotorama__thumb-border{
-    border-color: #F43D3D;
+    border-color: #F43D3D !important;
+}
+
+.fotorama__stage{
+    height: 725px !important;
+}
+
+.fotorama__nav__frame{
+    padding-top: 0px !important;
+}
+
+.fotorama__nav-wrap {
+    margin-top: 20px;
+}
+
+.fotorama__thumb-border{
+    margin: 0 !important;
 }
 
 .house__description {
@@ -1455,7 +1479,7 @@ a {
     min-width: 437px;
     text-align: center;
     right: 190px;
-    height: 80%;
+    height: 725px;
 }
 
 .info__title {
@@ -1566,7 +1590,7 @@ a {
 .info__price {
     position: absolute;
     right: 78%;
-    bottom: -71px;
+    bottom: 11px;
 }
 
 /*Reviews*/
