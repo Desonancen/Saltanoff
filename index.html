@@ -108,72 +108,170 @@
             <table class="table">
                 <tr class="row__of__items">
                     <th class="form__item">
-                        <div class="select__form">
-                            <select class="form__item-select" name="town" id="town">
-                                <option value="">Город:</option>
-                                <option value="">Барселона</option>
-                                <option value="">Гранд Алакант</option>
-                                <option value="">Мадрид</option>
-                                <option value="">Малага</option>
-                                <option value="">Валенсія</option>
-                                <option value="">Мальорка</option>
-                            </select>
+                        <div id="town" class="select__form" data-state="">
+                            <div class="form__item-select" data-default="Город:">Город:
+                            </div>
+                            <div class="select__content">
+                                <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect"
+                                    checked />
+                                <label for="singleSelect0" class="__select__label">Город:</label>
+                                <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect1" class="__select__label">Барселона</label>
+                                <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect2" class="__select__label">Гранд Алакант</label>
+                                <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect3" class="__select__label">Мадрид</label>
+                                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect4" class="__select__label">Малага</label>
+                                <input id="singleSelect5" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect5" class="__select__label">Валенсія</label>
+                                <input id="singleSelect6" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect6" class="__select__label">Мальорка</label>
+                            </div>
+                        </div>
+
+                    </th>
+                    <th class="form__item">
+                        <div id="type_of_property" class="select__form" data-state="">
+                            <div class="form__item-select" data-default="Тип недвижимости:">Тип недвижимости:
+                            </div>
+                            <div class="select__content">
+                                <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect"
+                                    checked />
+                                <label for="singleSelect0" class="__select__label">Тип недвижимости:</label>
+                                <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect1" class="__select__label">1</label>
+                                <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect2" class="__select__label">2</label>
+                                <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect3" class="__select__label">3</label>
+                                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect4" class="__select__label">4</label>
+                                <input id="singleSelect5" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect5" class="__select__label">5</label>
+                                <input id="singleSelect6" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect6" class="__select__label">6</label>
+                            </div>
+                        </div>
+
+                    </th>
+                    <th class="form__item">
+                        <div id="price_for" class="select__form" data-state="">
+                            <div class="form__item-select" data-default="Цена(от):">Цена(от):
+                            </div>
+                            <div class="select__content">
+                                <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect"
+                                    checked />
+                                <label for="singleSelect0" class="__select__label">Цена(от):</label>
+                                <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect1" class="__select__label">1</label>
+                                <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect2" class="__select__label">2</label>
+                                <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect3" class="__select__label">3</label>
+                                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect4" class="__select__label">4</label>
+                                <input id="singleSelect5" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect5" class="__select__label">5</label>
+                                <input id="singleSelect6" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect6" class="__select__label">6</label>
+                            </div>
                         </div>
                     </th>
                     <th class="form__item">
-                        <div class="select__form">
-                            <select class="form__item-select" name="type_of_property" id="type_of_property">
-                                <option value="">Тип недвижимости:</option>
-                                <option value=""></option>
-                                <option value=""></option>
-                            </select>
+                        <div id="price_to" class="select__form" data-state="">
+                            <div class="form__item-select" data-default="Цена(до):">Цена(до):
+                            </div>
+                            <div class="select__content">
+                                <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect"
+                                    checked />
+                                <label for="singleSelect0" class="__select__label">Цена(до):</label>
+                                <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect1" class="__select__label">1</label>
+                                <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect2" class="__select__label">2</label>
+                                <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect3" class="__select__label">3</label>
+                                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect4" class="__select__label">4</label>
+                                <input id="singleSelect5" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect5" class="__select__label">5</label>
+                                <input id="singleSelect6" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect6" class="__select__label">6</label>
+                            </div>
                         </div>
-                    </th>
-                    <th class="form__item">
-                        <div class="select__form">
-                            <select class="form__item-select" name="price_for" id="price_for">
-                                <option value="">Цена (от):</option>
-                                <option value=""></option>
-                                <option value=""></option>
-                            </select>
-                        </div>
-                    </th>
-                    <th class="form__item">
-                        <div class="select__form">
-                            <select class="form__item-select" name="price_to" id="price_to">
-                                <option value="">Цена (до):</option>
-                                <option value=""></option>
-                                <option value=""></option>
-                            </select>
-                        </div>
+
                     </th>
                 </tr>
                 <tr class="row__of__items">
                     <th class="form__item">
-                        <div class="select__form">
-                            <select class="form__item-select" name="square" id="square">
-                                <option value="">Площадь:</option>
-                                <option value=""></option>
-                                <option value=""></option>
-                            </select>
+                        <div id="square" class="select__form" data-state="">
+                            <div class="form__item-select" data-default="Площадь:">Площадь:
+                            </div>
+                            <div class="select__content">
+                                <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect"
+                                    checked />
+                                <label for="singleSelect0" class="__select__label">Площадь:</label>
+                                <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect1" class="__select__label">1</label>
+                                <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect2" class="__select__label">2</label>
+                                <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect3" class="__select__label">3</label>
+                                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect4" class="__select__label">4</label>
+                                <input id="singleSelect5" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect5" class="__select__label">5</label>
+                                <input id="singleSelect6" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect6" class="__select__label">6</label>
+                            </div>
                         </div>
                     </th>
                     <th class="form__item">
-                        <div class="select__form">
-                            <select class="form__item-select" name="bedroom_for" id="bedroom_for">
-                                <option value="">Спальни (от):</option>
-                                <option value=""></option>
-                                <option value=""></option>
-                            </select>
+                        <div id="bedroom_for" class="select__form" data-state="">
+                            <div class="form__item-select" data-default="Спальни(от):">Спальни(от):
+                            </div>
+                            <div class="select__content">
+                                <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect"
+                                    checked />
+                                <label for="singleSelect0" class="__select__label">Спальни(от):</label>
+                                <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect1" class="__select__label">1</label>
+                                <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect2" class="__select__label">2</label>
+                                <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect3" class="__select__label">3</label>
+                                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect4" class="__select__label">4</label>
+                                <input id="singleSelect5" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect5" class="__select__label">5</label>
+                                <input id="singleSelect6" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect6" class="__select__label">6</label>
+                            </div>
                         </div>
+
                     </th>
                     <th class="form__item">
-                        <div class="select__form">
-                            <select class="form__item-select" name="bedroom_to" id="bedroom_to">
-                                <option value="">Спальни (до):</option>
-                                <option value=""></option>
-                                <option value=""></option>
-                            </select>
+                        <div id="bedroom_to" class="select__form" data-state="">
+                            <div class="form__item-select" data-default="Спальни(до):">Спальни(до):
+                            </div>
+                            <div class="select__content">
+                                <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect"
+                                    checked />
+                                <label for="singleSelect0" class="__select__label">Спальни(до):</label>
+                                <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect1" class="__select__label">1</label>
+                                <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect2" class="__select__label">2</label>
+                                <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect3" class="__select__label">3</label>
+                                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect4" class="__select__label">4</label>
+                                <input id="singleSelect5" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect5" class="__select__label">5</label>
+                                <input id="singleSelect6" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect6" class="__select__label">6</label>
+                            </div>
                         </div>
                     </th>
                     <th class="form__item">
@@ -204,8 +302,10 @@
                 <div class="proposition first">
                     <div class="proposition__hot">HOT</div>
                     <div class="proposition__bg">
-                            <a href="house.html"><h3 class="proposition__title">Таунхаус в
-                            Orihuela Costa</h3></a>
+                        <a href="house.html">
+                            <h3 class="proposition__title">Таунхаус в
+                                Orihuela Costa</h3>
+                        </a>
                         <ul class="proposition__details">
                             <li class="detail__items"> <img src="img/house.svg" alt="house" class="items__icons">90 м2
                             </li>
@@ -222,8 +322,10 @@
                 <div class="proposition second">
                     <div class="proposition__hot">HOT</div>
                     <div class="proposition__bg">
-                        <a href="house.html"><h3 class="proposition__title">Вилла в <br>
-                            Сosta-Blanca</h3></a>
+                        <a href="house.html">
+                            <h3 class="proposition__title">Вилла в <br>
+                                Сosta-Blanca</h3>
+                        </a>
                         <ul class="proposition__details">
                             <li class="detail__items"> <img src="img/house.svg" alt="house" class="items__icons">
                                 115 м2</li>
