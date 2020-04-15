@@ -1,4 +1,7 @@
 body {
+    font-family: 'Museo Cyrl';
+    font-style: normal;
+    font-weight: normal;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -216,9 +219,10 @@ a {
 .header__title {
     margin: 131px 219px 30px 138px;
 
+    font-style: normal;
+    font-weight: normal;
     font-size: 60px;
     line-height: 60px;
-    font-weight: 700;
 }
 
 .header__description {
@@ -692,6 +696,8 @@ a {
 }
 
 .justnow__title {
+    font-style: normal;
+    font-weight: normal;
     font-size: 60px;
     line-height: 60px;
     color: rgb(244, 61, 61);
@@ -785,6 +791,8 @@ a {
 }
 
 .choose__title {
+    font-style: normal;
+    font-weight: normal;
     font-size: 60px;
     line-height: 60px;
     color:#fff;
