@@ -587,13 +587,14 @@ a {
 .first__leaf {
     position: absolute;
     bottom: -168px;
-    left: -8px;
+    left: 11%;
     z-index: 100;
 }
 
 .second__leaf {
     position: absolute;
-    right: 0;
+    right: 13%;
+    top: -29%;
     z-index: 100;
 }
 
@@ -675,7 +676,7 @@ a {
 .leaf_right_justnow{
     position: absolute;
     right: 0;
-    bottom: -375px;
+    bottom: -290px;
 }
 
 .justnow__map {
@@ -686,13 +687,15 @@ a {
 
 .justnow__maps {
     position: absolute;
-    left: -16px;
+    left: 44px;
     top: 116px;
 }
 
 .justnow__text {
-    margin-left: 70px;
     margin-right: 150px;
+    max-width: 536px;
+    margin-left: 9%;
+    margin-bottom: 5%;
 }
 
 .justnow__title {
@@ -783,11 +786,10 @@ a {
 }
 
 .choose__wave {
-    transform: rotate(90deg);
     position: absolute;
-    right: 47%;
     top: bottom;
-    bottom: -315px;
+    top: 9%;
+    width: 100%;
 }
 
 .choose__title {
@@ -872,7 +874,7 @@ a {
 
 .footer__map--left {
     position: absolute;
-    bottom: -155px;
+    bottom: -100px;
     left: 0;
 }
 
@@ -1820,3 +1822,6 @@ a {
     top: 46%;
     right: 2%;
 }
+
+/*Media*/
+
