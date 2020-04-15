@@ -498,15 +498,14 @@ a {
 .hot {
     position: relative;
     overflow: hidden;
-    margin-bottom: 150px;
+    padding-bottom: 150px;
 }
 
 .leaf__left {
     position: absolute;
-    transform: rotate(-8deg);
-    top: -372px;
+    top: -39px;
     z-index: 0;
-    left: -162px;
+    left: 0px;
 }
 
 .leaf__right {
@@ -560,6 +559,7 @@ a {
     height: 446px;
     background-color: #fff;
     top: 103px;
+    z-index: 100;
 }
 
 .first {
@@ -586,8 +586,8 @@ a {
 
 .first__leaf {
     position: absolute;
-    top: -102px;
-    left: 53px;
+    bottom: -168px;
+    left: -8px;
     z-index: 100;
 }
 
@@ -670,7 +670,12 @@ a {
 .justnow {
     display: flex;
     position: relative;
-    margin-bottom: 45px;
+}
+
+.leaf_right_justnow{
+    position: absolute;
+    right: 0;
+    bottom: -375px;
 }
 
 .justnow__map {
@@ -757,7 +762,7 @@ a {
 
 .choose {
     position: relative;
-    padding-top: 203px;
+    padding-top: 248px;
     overflow: hidden;
 }
 
@@ -772,8 +777,8 @@ a {
 
 .leaf__top {
     position: absolute;
-    top: 0px;
-    left: -113px;
+    top: -92px;
+    left: 0px;
     z-index: 2;
 }
 
@@ -861,8 +866,8 @@ a {
 
 .leaf__bottom {
     position: absolute;
-    top: -482px;
-    right: -158px;
+    top: -53px;
+    right: 0px;
 }
 
 .footer__map--left {
@@ -936,12 +941,13 @@ a {
 
 .footer__leaf--left {
     position: absolute;
-    left: -272px;
+    left: 0px;
+    bottom: -150px;
 }
 
 .footer__leaf--right {
     position: absolute;
-    right: -113px;
+    right: 0px;
 }
 
 /*footer*/
