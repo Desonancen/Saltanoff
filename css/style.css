@@ -1820,3 +1820,11 @@ a {
     top: 46%;
     right: 2%;
 }
+
+
+.calendar{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
