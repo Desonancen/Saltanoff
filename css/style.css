@@ -669,8 +669,23 @@ a {
 /* justnow */
 
 .justnow {
-    display: flex;
     position: relative;
+}
+
+.justnow__wrap{
+    max-width: 1640px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 50px;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .leaf_right_justnow{
@@ -704,7 +719,7 @@ a {
     font-size: 60px;
     line-height: 60px;
     color: rgb(244, 61, 61);
-    max-width: 537px;
+    max-width: 621px;
 }
 
 .justnow__description {
@@ -721,6 +736,7 @@ a {
     font-size: 16px;
     line-height: 24px;
     color: #000000;
+    max-width: 537px;
 
 
     margin-top: 20px;
@@ -1028,11 +1044,12 @@ a {
 }
 
 .nav__1{
-    margin-right: 20px;
+    margin-right: 30px;
     position: relative;
     text-decoration: none;
     color: black;
     z-index: 1000000;
+    font-size: 21px;
 }
 
 .nav__1::before{
@@ -1041,7 +1058,7 @@ a {
     width: 1.1px;
     background: black;
     position: absolute;
-    top: 2.5px;
+    top: 6.5px;
     right: -28px;
 
     transform: rotate(-45deg);
@@ -1053,7 +1070,7 @@ a {
     width: 1.1px;
     background: black;
     position: absolute;
-    top: 8px;
+    top: 12px;
     right: -28px;
 
     transform: rotate(45deg);
@@ -1062,7 +1079,10 @@ a {
 .nav__2{
     color: #F43D3D;
     margin-left: 30px;
+    margin-right: 30px;
     text-decoration: none;
+    font-size: 21px;
+
 }
 
 .about__path-1{
@@ -1089,15 +1109,15 @@ a {
     font-family: Museo Cyrl;
     font-style: normal;
     font-weight: normal;
-    font-size: 175px;
+    font-size: 180px;
     line-height: 200px;
     letter-spacing: 0.2em;
 
     opacity: 0.8;
 
     position: absolute;
-    top: 181px;;
-    left: 101px;
+    top: 207px;;
+    left: 10%;
 
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -1110,7 +1130,7 @@ a {
 
 .about__description{
 
-    width: 893px;
+    width: 62%;
     height: 641px;
     background: #F5BA21;
     position: relative;
@@ -1139,7 +1159,7 @@ a {
     font-family: Museo Cyrl;
     font-style: normal;
     font-weight: normal;
-    font-size: 60px;
+    font-size: 70px;
     line-height: 60px;
 
     margin-bottom: 30px
@@ -1150,7 +1170,7 @@ a {
     font-family: Museo Cyrl;
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 21px;
     line-height: 24px;
 
     margin-bottom: 25px;
@@ -1160,7 +1180,7 @@ a {
     font-family: Museo Cyrl;
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 21px;
     line-height: 24px;
 }
 
@@ -1196,8 +1216,9 @@ a {
     font-family: Museo Cyrl;
     font-style: normal;
     font-weight: normal;
-    font-size: 60px;
+    font-size: 70px;
     line-height: 60px;
+    margin-bottom: 50px;
 
     color: #F43D3D;
 }
@@ -1213,7 +1234,7 @@ a {
 }
 
 .s_right-item {
-    font-size: 16px;
+    font-size: 21px;
     line-height: 24px;
     color: #000000;
 
@@ -1300,7 +1321,7 @@ a {
     font-family: Museo Cyrl;
     font-style: normal;
     font-weight: normal;
-    font-size: 60px;
+    font-size: 65px;
     line-height: 60px;
     text-align: center;
 
@@ -1549,6 +1570,7 @@ a {
     color: #F43D3D;
     margin-left: 30px;
     text-decoration: none;
+    font-size: 21px;
 }
 
 .nav__3::before{
@@ -1576,6 +1598,12 @@ a {
 .house__info{
     position:relative;
     overflow: hidden;
+}
+
+.inner{
+    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .fotorama__wrap{
@@ -1617,6 +1645,7 @@ a {
 }
 
 .text__block {
+    font-size: 21px;
     margin-bottom: 30px;
 }
 
@@ -1627,7 +1656,7 @@ a {
     z-index: 1000;
     min-width: 437px;
     text-align: center;
-    right: 190px;
+    right: 0;
     height: 725px;
 }
 
@@ -1823,15 +1852,27 @@ a {
     right: 2%;
 }
 
-<<<<<<< HEAD
-
 .calendar{
     max-width: 1140px;
     margin: 0 auto;
     padding-bottom: 50px;
     padding-top: 50px;
 }
-=======
-/*Media*/
 
->>>>>>> c20876bc15f0bda01b60d1c41d95b423dedad442
+
+@media(max-width: 1540px){
+    .nav__1, .nav__2, .nav__3, .about__description-tittle,
+    .about__description-subtittle, .s_right-item,
+    .text__block {
+        font-size: 16px;
+    }
+    .t-espania{
+        font-size: 175px;
+    }
+    .s__headline, .about__description-headline{
+        font-size: 60px;
+    }
+    .headline{
+        font-size: 60px;
+    }
+}
