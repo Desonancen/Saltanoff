@@ -2057,3 +2057,46 @@ a {
         left: 675px;
     }
 }
+
+@media(max-width: 1024px){
+    .header__title {
+        font-size: 35px;
+        line-height: 45px;
+        margin: 131px 95px 30px 90px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .main__form {
+        zoom: 0.65;
+        left: 725px;
+    }
+
+    .header__description {
+        margin: 0px 175px 0 90px;
+    }
+
+    .slider__dots {
+        left: 540px;
+    }
+
+    .main__title {
+        font-size: 27px;
+    }
+
+    .header__phone {
+        font-size: 20px;
+    }
+
+    .news {
+        bottom: 580px;
+        right: 20%;
+        zoom: 0.8;
+    }
+
+    .choose__wave {
+        top: 21%;
+    }
+}
