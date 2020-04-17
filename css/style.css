@@ -811,7 +811,7 @@ a {
     position: absolute;
     top: bottom;
     top: 9%;
-    width: 100%;
+    width: 101%;
 }
 
 .choose__title {
@@ -986,7 +986,7 @@ a {
     height: 0px;
     position: absolute;
     height: 47px;
-    top: -94px;
+    top: -91px;
     background-size: cover;
 }
 
@@ -1880,6 +1880,9 @@ a {
     }
     .headline{
         font-size: 60px;
+    }
+}
+
 /*Media*/
 
 
