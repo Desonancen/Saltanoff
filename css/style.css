@@ -1866,6 +1866,20 @@ a {
 }
 
 
+/*Media*/
+
+
+@media(max-width:1680px) {
+    .news {
+        bottom:420px ;
+        right:20%;
+    }
+
+    .choose__wave {
+        top: 14%;
+    }
+}
+
 @media(max-width: 1540px){
     .nav__1, .nav__2, .nav__3, .about__description-tittle,
     .about__description-subtittle, .s_right-item,
@@ -1883,17 +1897,6 @@ a {
     }
 }
 
-/*Media*/
-
-
-@media(max-width:1680px) {
-    .news {
-        bottom:420px ;
-        right:20%;
-    }
-
-}
-
 @media(max-width:1440px) {
     .choose__wave {
         top: 15%;
@@ -1903,9 +1906,28 @@ a {
         bottom: 415px;
         right: 18%;
     }
+
+    .header__title {
+        font-size: 58px;
+    }
+
+    .main__form {
+        zoom: 0.9;
+        left: 618px;
+    }
 }
 
 @media(max-width:1280px) {
+
+    .header__title {
+        font-size: 44px;
+    }
+
+    .header__description {
+        margin: 0px 175px 0 138px;
+        padding-right: 0;
+    }
+
     .catalog__headline {
         margin-top: 60px;
     }
@@ -1926,14 +1948,78 @@ a {
 }
 
 @media (max-width:1152px) {
+
+    .header__left{
+        padding-left: 120px;
+        padding-right: 47px;
+    }
+
+    .header__wave {
+        left: 345px;
+    }
+
+    .bag {
+        zoom: 0.9;
+    }
+
+    .header__title {
+        font-size: 36px;
+        line-height: 55px;
+    }
+
+    body {
+        font-size: 15px;
+    }
+
+    .main__form {
+        zoom: 0.7;
+        left: 759px;
+    }
+
+    .slider__dots {
+        bottom: 24%;
+        left: 605px;
+        zoom: .9;
+    }
+
+    .headline {
+        font-size: 48px;
+    }
+
+    .justnow__title {
+        font-size: 50px;
+        line-height: 50px;
+    } 
+
+    .justnow__description {
+        font-size: 14px;
+    }
+
+    .justnow__item {
+        font-size: 13px;
+    }
+
+    .choose__bg {
+        zoom: .9;
+    }
+
+    .choose__title {
+        font-size: 55px;
+        line-height: 55px;
+    }
+
+    .justnow__maps{
+        width: 90%;
+    }
     .choose__wave {
-        top:18%;
+        top:20%;
     }
 
     .news {
-        bottom: 400px;
-        right: 10%;
-        padding:70px 140px;
+        bottom: 500px;
+        right: 20%;
+        padding: 70px 140px;
+        zoom: .9;
     }
 
     .footer__top {
@@ -1959,4 +2045,15 @@ a {
         max-width: 1060px;
     }
 
+}
+
+@media(max-width:1152px) {
+    .propositions {
+        zoom: 0.9;
+    }
+
+    .main__form {
+        zoom: 0.7;
+        left: 675px;
+    }
 }
