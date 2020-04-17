@@ -2099,4 +2099,12 @@ a {
     .choose__wave {
         top: 21%;
     }
+
+    .first__leaf {
+        left: 0;
+    }
+
+    .second__leaf {
+        right: 0%;
+    }
 }
