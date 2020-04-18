@@ -48,7 +48,7 @@ a {
 }
 
 .btn {
-    font-size: 21px;
+    font-size: 16px;
     line-height: 24px;
     color:#fff;
     background-color: rgb(244, 61, 61);
@@ -1558,6 +1558,7 @@ a {
 }
 
 .form_btn{
+    font-size: 21px;
     padding: 12px 42px;
 }
 
@@ -1887,7 +1888,7 @@ a {
 @media(max-width: 1540px){
     .nav__1, .nav__2, .nav__3, .about__description-tittle,
     .about__description-subtittle, .s_right-item,
-    .text__block, .subtittle, .btn{
+    .text__block, .subtittle, .form_btn{
         font-size: 16px;
     }
     .t-espania{
@@ -1966,7 +1967,7 @@ a {
         padding-left: 95px;
     }
 
-    .subtittle, .btn{
+    .subtittle, .form_btn{
         font-size: 14px;
     }
     .contacts__block-l, .contacts__block-r{
@@ -2152,7 +2153,7 @@ a {
     .grid{
         grid-gap: 11px;
     }
-    .subtittle, .btn{
+    .subtittle{
         font-size: 11px;
     }
     .contacts__block-l, .contacts__block-r{
@@ -2174,6 +2175,7 @@ a {
         height: 105px;
     }
     .form_btn {
+        font-size: 11px;
         padding: 6px 23px;
     }
 }
