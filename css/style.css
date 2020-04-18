@@ -48,7 +48,7 @@ a {
 }
 
 .btn {
-    font-size: 16px;
+    font-size: 21px;
     line-height: 24px;
     color:#fff;
     background-color: rgb(244, 61, 61);
@@ -1342,7 +1342,7 @@ a {
     font-family: Museo Cyrl;
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 21px;
     line-height: 24px;
 }
 
@@ -1487,8 +1487,8 @@ a {
 }
 
 .contacts__block-l{
-    width: 585px;
-    height: 582px;
+    width: 700px;
+    height: 670px;
     justify-self: end;
     background: url(../img/contacts_img/contacts-img.jpg) no-repeat center;
     background-size: cover;
@@ -1509,8 +1509,8 @@ a {
 }
 
 .contacts__block-r{
-    width: 555px;
-    height: 582px;
+    width: 700px;
+    height: 670px;
     background:  #F5BA21;
 }
 
@@ -1529,7 +1529,7 @@ a {
     font-family: Museo Cyrl;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 35px;
     line-height: 40px;
     text-align: center;
 
@@ -1541,8 +1541,8 @@ a {
 }
 
 .form-1{
-    width: 358px;
-    height: 46px;
+    width: 429px;
+    height: 53px;
     margin-bottom: 22px;
     padding-left: 16px;
     color: black;
@@ -1551,8 +1551,8 @@ a {
 
 .form-2{
     padding: 16px;
-    width: 358px;
-    height: 153px;
+    width: 429px;
+    height: 190px;
     margin-bottom: 26px;
     resize: none;
 }
@@ -1887,7 +1887,7 @@ a {
 @media(max-width: 1540px){
     .nav__1, .nav__2, .nav__3, .about__description-tittle,
     .about__description-subtittle, .s_right-item,
-    .text__block {
+    .text__block, .subtittle, .btn{
         font-size: 16px;
     }
     .t-espania{
@@ -1899,6 +1899,23 @@ a {
     .headline{
         font-size: 60px;
     }
+
+    .contacts__block-l, .contacts__block-r{
+        width: 585px;
+        height: 582px;
+    }
+    .c__block-r_headline{
+        font-size: 30px;
+    }
+    .form-1{
+        width: 358px;
+        height: 46px;
+    }
+    .form-2{
+        width: 358px;
+        height: 153px;
+    }
+
 }
 
 @media(max-width:1440px) {
@@ -1947,6 +1964,26 @@ a {
 
     .rent {
         padding-left: 95px;
+    }
+
+    .subtittle, .btn{
+        font-size: 14px;
+    }
+    .contacts__block-l, .contacts__block-r{
+        width: 490px;
+        height: 492px;
+    }
+    .c__block-r_headline{
+        font-size: 28px;
+    }
+    .form-1{
+        width: 329px;
+        height: 33px;
+        margin-bottom: 17px;
+    }
+    .form-2{
+        width: 329px;
+        height: 118px;
     }
 
 }
@@ -2048,10 +2085,6 @@ a {
     .catalog__filter {
         max-width: 1060px;
     }
-
-}
-
-@media(max-width:1152px) {
     .propositions {
         zoom: 0.9;
     }
@@ -2060,6 +2093,10 @@ a {
         zoom: 0.7;
         left: 675px;
     }
+    .contacts__block-l, .contacts__block-r {
+        width: 472px;
+    }
+
 }
 
 @media(max-width: 1024px){
@@ -2111,4 +2148,33 @@ a {
     .second__leaf {
         right: 0%;
     }
+    
+    .grid{
+        grid-gap: 11px;
+    }
+    .subtittle, .btn{
+        font-size: 11px;
+    }
+    .contacts__block-l, .contacts__block-r{
+        width: 366px;
+        height: 414px;
+    }
+    .c__block-r_headline{
+        font-size: 23px;
+        margin-top: 20px;
+        margin-bottom: 14px;
+    }
+    .form-1{
+        width: 261px;
+        height: 29px;
+        margin-bottom: 17px;
+    }
+    .form-2{
+        width: 261px;
+        height: 105px;
+    }
+    .form_btn {
+        padding: 6px 23px;
+    }
 }
+
