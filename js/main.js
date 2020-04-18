@@ -97,4 +97,17 @@ function SelectForm(i) {
   });
 }
 
+<<<<<<< HEAD
 findClick();
+=======
+findClick();
+
+
+
+const fotorama = document.querySelector('.fotorama');
+if (document.documentElement.clientWidth  <= 1280 )
+{
+  fotorama.setAttribute('data-maxwidth', '900')
+}
+    
+>>>>>>> 3891979d0f1bdeb5f856b5f0e31b91e6458a6c86
