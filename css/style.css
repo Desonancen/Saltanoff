@@ -1329,6 +1329,41 @@ a {
     overflow: hidden;
 }
 
+#town-filter{
+    width: 226px;
+    height: 46px;
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+#type_of_property-filter{
+    width: 198px;
+    height: 46px;
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+#square-filter{
+    width: 134px;
+    height: 46px;
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+#bedroom_for-filter{
+    width: 150px;
+    height: 46px;
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+#bedroom_to-filter{
+    width: 150px;
+    height: 46px;
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+}
 
 .headline{      /*Класс для всех красных заголовков*/
     font-family: Museo Cyrl;
@@ -2104,12 +2139,28 @@ a {
     }
 
     .catalog__sort {
-        max-width: 1050px;
+        max-width: 947px;
     }
     
     .catalog__filter {
-        max-width: 1060px;
+        max-width: 947px;
     }
+    #town-filter{
+        width: 166px;
+    }
+    #square-filter {
+        width: 120px;
+    }   
+    #type_of_property-filter {
+        width: 166px;
+    }
+    #bedroom_for-filter {
+        width: 131px;
+    }
+    #bedroom_to-filter {
+        width: 131px;
+    }
+
     .propositions {
         zoom: 0.9;
     }
