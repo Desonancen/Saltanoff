@@ -99,9 +99,14 @@ function SelectForm(i) {
 
 findClick();
 
+<<<<<<< HEAD
 const fotorama = document.querySelector('.fotorama');
+=======
+
+
+>>>>>>> b4d31e3f9bad82e7875b7bd98fc659ed148efb40
 if (document.documentElement.clientWidth  <= 1280 )
 {
-  fotorama.setAttribute('data-maxwidth', '900')
+  document.querySelector('.fotorama').setAttribute('data-maxwidth', '900');
 }
     
