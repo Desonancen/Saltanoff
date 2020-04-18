@@ -1655,10 +1655,6 @@ a {
     position: relative;
 }
 
-.fotorama__wrap{
-    margin: 0 auto;
-}
-
 .fotorama__thumb{
     border: 1px #00afea solid;
 }
@@ -2045,6 +2041,10 @@ a {
     .t-espania{
         font-size: 158px;
         left: 4%;
+    }
+    /*House*/
+    .house__title{
+        font-size: 55px;
     }
 }
 
