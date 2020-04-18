@@ -1655,6 +1655,10 @@ a {
     position: relative;
 }
 
+.fotorama__wrap{
+    margin: 0 auto;
+}
+
 .fotorama__thumb{
     border: 1px #00afea solid;
 }
@@ -2045,6 +2049,52 @@ a {
     /*House*/
     .house__title{
         font-size: 55px;
+    }
+    .inner{
+        max-width: 900px;
+    }
+    .info__title {
+        font-size: 21px;
+        margin-left: 13px;
+        margin-bottom: 16px;
+        padding-bottom: 20px;
+        adding-top: 21px;
+    }
+    .info-checkbox {
+        font-size: 13px;
+    }
+    .items__icons{
+        width: 26px;
+    }
+    .info>.proposition__details>.detail__items {
+        font-size: 14px;
+    }
+    .filter-option {
+        margin-bottom: 0px;
+    }
+    .info__price {
+        right: 75%;
+        bottom: -2px;
+    }
+    .house__btn {
+        padding: 6px 15px;
+        margin-left: 93px;
+        margin-top: 17px;
+    }
+    .info{
+        height: 572px;
+    }
+    .info>.proposition__details>.detail__items {
+        margin-bottom: 7px;
+    }
+    .fotorama__stage{
+        height: 572px !important;
+    }
+    .house__description {
+        max-width: 900px;
+    }
+    .text__block{
+        font-size: 15px;
     }
 }
 
