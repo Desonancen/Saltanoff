@@ -1237,9 +1237,12 @@ a {
     position: relative;
 }
 
+.s__image-1{
+    position: absolute;
+}
 .s__image-2{
     position: absolute;
-    top: 315px;
+    top: 393px;
     left: 205px;
 }
 
@@ -1247,7 +1250,6 @@ a {
     font-size: 21px;
     line-height: 24px;
     color: #000000;
-
 
     margin-top: 20px;
     padding-left: 34px;
@@ -1295,21 +1297,22 @@ a {
 .s_vector-1{
     position: absolute;
     top: -370px;
-    right: -185px;
+    right: 0px;
     z-index: 10000;
 }
 
 .s_vector-2{
     position: absolute;
     bottom: 0;
-    right: -185px;
+    right: 0;
     z-index: 10000;
 }
 
 .s_vector-3{
     position: absolute;
     top: 0;
-    left: -200px;
+    left: 0;    
+    width: 100%;
 }
 
 .s_vector-4{
@@ -1937,6 +1940,10 @@ a {
         zoom: 0.9;
         left: 618px;
     }
+    /*About*/
+    .t-espania{
+        left: 6%;
+    }
 }
 
 @media(max-width:1280px) {
@@ -1966,7 +1973,7 @@ a {
     .rent {
         padding-left: 95px;
     }
-
+    /*Contacts*/
     .subtittle, .form_btn{
         font-size: 14px;
     }
@@ -1986,7 +1993,23 @@ a {
         width: 329px;
         height: 118px;
     }
-
+    /*About*/
+    .s__headline{
+        margin-left: 30px;
+    }
+    .s__image-1{
+        left: 30px;
+    }
+    .about__image{
+        width: 480px;
+    }
+    .about__description{
+        height: 604px;
+    }
+    .t-espania{
+        font-size: 158px;
+        left: 4%;
+    }
 }
 
 @media (max-width:1152px) {
@@ -2097,6 +2120,49 @@ a {
     .contacts__block-l, .contacts__block-r {
         width: 472px;
     }
+    /*About*/
+    .s_right-item {
+        margin-right: 30px;
+        font-size: 14px;
+    }
+    .s__headline{
+        margin-left: 99px;
+    }
+    .s__image-1{
+        width: 350px;
+        position: absolute;
+        left: 99px;
+    }
+    .s__image-2{
+        width: 321px;
+        top: 362px;
+        left: 253px;
+    }
+    .about__image{
+        width: 430px;
+    }
+    .about__img{
+        left: -342px;
+        bottom: -82px;
+    }
+    .about__description{
+        height: 535px;
+    }
+    .t-espania{
+        font-size: 158px;
+        left: 4%;
+    }
+    .about__description-flag {
+        width: 150px;
+        top: 28px;
+        right: 30px;
+    }
+    .s__headline, .about__description-headline {
+        font-size: 55px;
+    }
+    .about__description-tittle, .about__description-subtittle{
+        font-size: 14px;
+    }
 
 }
 
@@ -2178,5 +2244,49 @@ a {
         font-size: 11px;
         padding: 6px 23px;
     }
+    /*About*/
+    .s_right-item {
+        margin-right: 30px;
+        font-size: 13px;
+    }
+    .s__headline{
+        font-size: 48px;
+        margin-left: 85px;
+        margin-bottom: 15px;
+    }
+    .s__image-1{
+        width: 280px;
+        position: absolute;
+        left: 85px;
+    }
+    .s__image-2{
+        width: 258px;
+        top: 293px;
+        left: 228px;
+    }
+    .about__image{
+        width: 400px;
+    }
+    .about__img{
+        left: -313px;
+        bottom: -55px;
+    }
+    .about__description{
+        height: 516px;
+    }
+    .t-espania{
+        font-size: 143px;
+    }
+    .about__description-flag {
+        width: 145px;
+    }
+     .about__description-headline {
+        margin-bottom: 10px;
+        font-size: 49px;
+    }
+    .about__description-tittle, .about__description-subtittle{
+        font-size: 13px;
+    }
+
 }
 
