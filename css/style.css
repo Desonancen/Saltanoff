@@ -2109,6 +2109,7 @@ a {
 
     body {
         font-size: 14px;
+        min-width: 1024px;
     }
 
     .main__form {
