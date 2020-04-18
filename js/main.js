@@ -100,3 +100,10 @@ function SelectForm(i) {
 findClick();
 
 
+
+const fotorama = document.querySelector('.fotorama');
+if (document.documentElement.clientWidth  <= 1280 )
+{
+  fotorama.setAttribute('data-maxwidth', '900')
+}
+    
