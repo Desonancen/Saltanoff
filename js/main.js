@@ -30,6 +30,13 @@ function showSlides(n) {
 }
 
 
+const Fotorama = document.querySelector('.fotorama');
+if (document.documentElement.clientWidth  <= 1280 && Fotorama != null)
+{
+  Fotorama.setAttribute("data-maxwidth", '900');
+}
+    
+
 
 let select_form = ["#town", "#type_of_property", "#price_for", "#price_to", "#square", "#bedroom_for", "#bedroom_to"];
 
@@ -101,8 +108,3 @@ findClick();
 
 
 
-if (document.documentElement.clientWidth  <= 1280 )
-{
-  document.querySelector('.fotorama').setAttribute('data-maxwidth', '900');
-}
-    
