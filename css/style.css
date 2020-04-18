@@ -1655,14 +1655,6 @@ a {
     position: relative;
 }
 
-.fotorama{
-    max-width: 1140px !important;
-
-}
-.fotorama__wrap{
- 
-}
-
 .fotorama__thumb{
     border: 1px #00afea solid;
 }
