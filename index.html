@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/fonts.css">
@@ -34,6 +34,11 @@
                 <li class="language__item">EN</li>
                 <li class="language__item">SP</li>
             </ul>
+             <div class="burger">
+                <div class="topline"></div>
+                <div class="middleline"></div>
+                <div class="bottomline"></div>
+            </div>
         </div>
         <div class="header__wave"></div>
         <div class="slider">
@@ -281,10 +286,11 @@
                 </tr>
             </table>
         </form>
-
+    <img src="./img/leafs_pics/mobile_leaf_top.png" alt="" class="mobile_leaf_top">
     </header>
     <div class="container">
         <section class="hot">
+
             <img src="img/leafs_pics/leaf_top.png" alt="leaf" class="leaf__left">
             <img src=" " alt="leaf" class="leaf__right">
             <div class="hot__text">
@@ -297,6 +303,7 @@
 
             <div class="propositions">
                 <img src="./img/proposition__map.svg" alt="map" class="proposition__map">
+
                 <img src="./img/leafs_pics/leaf_left.png" alt="leaf" class="first__leaf">
                 <img src="./img/leafs_pics/leaf_right.png" alt="leaf" class="second__leaf">
                 <div class="bg__leaf"></div>
@@ -341,7 +348,10 @@
                     </div>
                 </div>
             </div>
-            <a href="catalog.html" class="btn see__more">Больше объектов</a>
+            <div class="btn_center">
+                <a href="catalog.html" class="btn see__more">Больше объектов</a>
+             </div>
+       
         </section>
         <section class="justnow">
             <img src="img/leafs_pics/leaf_right_justnow.png" alt="" class="leaf_right_justnow">
@@ -366,13 +376,22 @@
                     </ul>
                 </div>
             </div>
+             <img src="./img/proposition__map.svg" alt="map" class="justnow__map-2">
         </section>
+        
         <section class="choose">
             <img src="img/leafs_pics/leaf_wave.png" alt="leaf" class="leaf__top">
             <img src="img/choose__wave.svg" alt="wave" class="choose__wave">
             <div class="choose__bg">
                 <h2 class="choose__title">Выбери лучший из вариантов дома у моря!</h2>
                 <button type="button" class="btn choose__btn">К домам</button>
+                <p class="news__description-mobile">Подпишись на наши новости,
+                чтобы не пропустить горячие предложения! </p>
+                <form action="main.php" class="news__form-mobile">
+                <input type="email" placeholder="Введите Ваш e-mail...">
+                <button type="submit" class="btn subscribe mobile">Подписаться!</button>
+            </form>
+             <img src="./img/leafs_pics/moblie_leaf_bottom.png" alt="" class="moblie_leaf_bottom">
             </div>
         </section>
         <aside class="news">
@@ -383,7 +402,9 @@
                 <button type="submit" class="btn subscribe">Подписаться!</button>
             </form>
         </aside>
+
         <section class="rent">
+            <div class="footer__wave-mobile"></div>
             <img src="/img/footer__map--left.svg" alt="map" class="footer__map--left">
             <img src="/img/footer__map--right.svg" alt="map" class="footer__map--right">
             <img src="img/leafs_pics/leaf__bottom.png" alt="leaf" class="leaf__bottom">
