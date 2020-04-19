@@ -34,6 +34,11 @@
                 <li class="language__item">EN</li>
                 <li class="language__item">SP</li>
             </ul>
+            <div class="burger">
+                <div class="topline"></div>
+                <div class="middleline"></div>
+                <div class="bottomline"></div>
+            </div>
         </div>
         <div class="header__wave"></div>
         <div class="slider">
@@ -106,72 +111,175 @@
 
         </div>
         <form action="main.php" class="main__form">
-            <table class="table">
+                      <table class="table">
                 <tr class="row__of__items">
                     <th class="form__item">
-                        <div class="select__form">
-                            <select class="form__item-select" name="town" id="town">
-                                <option value="">Город:</option>
-                                <option value=""></option>
-                                <option value=""></option>
-                                <option value=""></option>
-                            </select>
+                        <div id="town" class="select__form" data-state="">
+                            <div id="0" class="form__item-select" data-default="Город:">Город:
+                            </div>
+                            <div class="select__content">
+                                <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect"
+                                    checked />
+                                <label for="singleSelect0" class="__select__label">Город:</label>
+                                <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect1" class="__select__label">Барселона</label>
+                                <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect2" class="__select__label">Гранд Алакант</label>
+                                <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect3" class="__select__label">Мадрид</label>
+                                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect4" class="__select__label">Малага</label>
+                                <input id="singleSelect5" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect5" class="__select__label">Валенсія</label>
+                                <input id="singleSelect6" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect6" class="__select__label">Мальорка</label>
+                            </div>
                         </div>
+
                     </th>
                     <th class="form__item">
-                        <div class="select__form">
-                            <select class="form__item-select" name="type_of_property" id="type_of_property">
-                                <option value="">Тип недвижимости:</option>
-                                <option value=""></option>
-                                <option value=""></option>
-                            </select>
+                        <div id="type_of_property" class="select__form" data-state="">
+                            <div id="1" class="form__item-select" data-default="Тип недвижимости:">Тип недвижимости:
+                            </div>
+                            <div class="select__content">
+                                <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect"
+                                    checked />
+                                <label for="singleSelect0" class="__select__label">Тип недвижимости:</label>
+                                <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect1" class="__select__label">1</label>
+                                <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect2" class="__select__label">2</label>
+                                <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect3" class="__select__label">3</label>
+                                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect4" class="__select__label">4</label>
+                                <input id="singleSelect5" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect5" class="__select__label">5</label>
+                                <input id="singleSelect6" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect6" class="__select__label">6</label>
+                            </div>
                         </div>
+
                     </th>
-                    <th class="form__item">
-                        <div class="select__form">
-                            <select class="form__item-select" name="price_for" id="price_for">
-                                <option value="">Цена (от):</option>
-                                <option value=""></option>
-                                <option value=""></option>
-                            </select>
+                    <th class="table_inline">   
+                    <div class="form__item table_inline-item">
+                        <div id="price_for" class="select__form" data-state="">
+                            <div class="form__item-select" data-default="Цена(от):">Цена(от):
+                            </div>
+                            <div class="select__content">
+                                <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect"
+                                    checked />
+                                <label for="singleSelect0" class="__select__label">Цена(от):</label>
+                                <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect1" class="__select__label">1</label>
+                                <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect2" class="__select__label">2</label>
+                                <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect3" class="__select__label">3</label>
+                                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect4" class="__select__label">4</label>
+                                <input id="singleSelect5" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect5" class="__select__label">5</label>
+                                <input id="singleSelect6" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect6" class="__select__label">6</label>
+                            </div>
                         </div>
-                    </th>
-                    <th class="form__item">
-                        <div class="select__form">
-                            <select class="form__item-select" name="price_to" id="price_to">
-                                <option value="">Цена (до):</option>
-                                <option value=""></option>
-                                <option value=""></option>
-                            </select>
+                    </div>
+                    <div class="form__item table_inline-item">
+                        <div id="price_to" class="select__form" data-state="">
+                            <div class="form__item-select" data-default="Цена(до):">Цена(до):
+                            </div>
+                            <div class="select__content">
+                                <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect"
+                                    checked />
+                                <label for="singleSelect0" class="__select__label">Цена(до):</label>
+                                <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect1" class="__select__label">1</label>
+                                <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect2" class="__select__label">2</label>
+                                <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect3" class="__select__label">3</label>
+                                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect4" class="__select__label">4</label>
+                                <input id="singleSelect5" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect5" class="__select__label">5</label>
+                                <input id="singleSelect6" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect6" class="__select__label">6</label>
+                            </div>
                         </div>
+                    </div>
                     </th>
                 </tr>
                 <tr class="row__of__items">
                     <th class="form__item">
-                        <div class="select__form">
-                            <select class="form__item-select" name="square" id="square">
-                                <option value="">Площадь:</option>
-                                <option value=""></option>
-                                <option value=""></option>
-                            </select>
+                        <div id="square" class="select__form" data-state="">
+                            <div class="form__item-select" data-default="Площадь:">Площадь:
+                            </div>
+                            <div class="select__content">
+                                <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect"
+                                    checked />
+                                <label for="singleSelect0" class="__select__label">Площадь:</label>
+                                <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect1" class="__select__label">1</label>
+                                <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect2" class="__select__label">2</label>
+                                <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect3" class="__select__label">3</label>
+                                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect4" class="__select__label">4</label>
+                                <input id="singleSelect5" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect5" class="__select__label">5</label>
+                                <input id="singleSelect6" class="__select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect6" class="__select__label">6</label>
+                            </div>
                         </div>
                     </th>
-                    <th class="form__item">
-                        <div class="select__form">
-                            <select class="form__item-select" name="bedroom_for" id="bedroom_for">
-                                <option value="">Спальни (от):</option>
-                                <option value=""></option>
-                                <option value=""></option>
-                            </select>
+                    <th class="table_inline">   
+                        <div class="form__item table_inline-item">
+                            <div id="bedroom_for" class="select__form" data-state="">
+                                <div class="form__item-select" data-default="Спальни(от):">Спальни(от):
+                                </div>
+                                <div class="select__content">
+                                    <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect"
+                                        checked />
+                                    <label for="singleSelect0" class="__select__label">Спальни(от):</label>
+                                    <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                                    <label for="singleSelect1" class="__select__label">1</label>
+                                    <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+                                    <label for="singleSelect2" class="__select__label">2</label>
+                                    <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                                    <label for="singleSelect3" class="__select__label">3</label>
+                                    <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                                    <label for="singleSelect4" class="__select__label">4</label>
+                                    <input id="singleSelect5" class="__select__input" type="radio" name="singleSelect" />
+                                    <label for="singleSelect5" class="__select__label">5</label>
+                                    <input id="singleSelect6" class="__select__input" type="radio" name="singleSelect" />
+                                    <label for="singleSelect6" class="__select__label">6</label>
+                                </div>
+                            </div>
                         </div>
-                    </th>
-                    <th class="form__item">
-                        <div class="select__form">
-                            <select class="form__item-select" name="bedroom_to" id="bedroom_to">
-                                <option value="">Спальни (до):</option>
-                                <option value=""></option>
-                                <option value=""></option>
-                            </select>
+                        <div class="form__item table_inline-item">
+                            <div id="bedroom_to" class="select__form" data-state="">
+                                <div class="form__item-select" data-default="Спальни(до):">Спальни(до):
+                                </div>
+                                <div class="select__content">
+                                    <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect"
+                                        checked />
+                                    <label for="singleSelect0" class="__select__label">Спальни(до):</label>
+                                    <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                                    <label for="singleSelect1" class="__select__label">1</label>
+                                    <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+                                    <label for="singleSelect2" class="__select__label">2</label>
+                                    <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                                    <label for="singleSelect3" class="__select__label">3</label>
+                                    <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                                    <label for="singleSelect4" class="__select__label">4</label>
+                                    <input id="singleSelect5" class="__select__input" type="radio" name="singleSelect" />
+                                    <label for="singleSelect5" class="__select__label">5</label>
+                                    <input id="singleSelect6" class="__select__input" type="radio" name="singleSelect" />
+                                    <label for="singleSelect6" class="__select__label">6</label>
+                                </div>
+                            </div>
                         </div>
                     </th>
                     <th class="form__item">
@@ -309,6 +417,11 @@
             <div class="choose__bg">
                 <h2 class="choose__title">Выбери лучший из вариантов дома у моря!</h2>
                 <button type="button" class="btn choose__btn">К домам</button>
+                <p class="news__description-mobile">Подпишись на наши новости,
+                чтобы не пропустить горячие предложения! </p>
+                <form action="main.php" class="news__form-mobile">
+                <input type="email" placeholder="Введите Ваш e-mail...">
+                <button type="submit" class="btn subscribe mobile">Подписаться!</button>
             </div>
         </section>
         <aside class="news">
