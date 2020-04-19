@@ -2504,7 +2504,7 @@ a {
     .slider__dots{
         left:40%;
         bottom: 46px;
-        z-index: 100;
+        z-index: 11;
         zoom: 1.5;
     }
     .main__form{
@@ -2533,14 +2533,8 @@ a {
         height: 46px;
         margin-bottom: 15px;
     }
-<<<<<<< HEAD
     .table_inline-item{
         width: 50%; 
-=======
-
-    .price-mobile>.form__item {
-        width: 50%;
->>>>>>> 0a60ec5ae1f6b89aedb3c96558c2bb1a345c9b79
     }
     .language{
         margin: 39px;
@@ -2713,7 +2707,7 @@ a {
         padding-top: 50px;
     }
     .choose__bg{
-        margin-bottom: 90px;    
+        margin-bottom: 140px;
     }
 
     .choose__title{
@@ -2748,7 +2742,7 @@ a {
         margin-top: 20px;
         margin-bottom: 30px;
      }
-    .news, .rent__img--text, .footer__map--right, .footer__map--left {
+    .news, .rent__img--text{
         display:none;
     }
     /*rent/footer*/
@@ -2762,15 +2756,12 @@ a {
         bottom: -232px;
     }
     .footer__wave-mobile{
-        display: block;
-        top: -45px;
-        background-position: center;
-        z-index: 1000;
+        display:block;
+        top:-49px;
     }
     .rent{
         padding: 0;
         flex-direction: column;
-        overflow: inherit;
     }
     .rent__img .header__logo{
         margin-top: 30px;
