@@ -2533,8 +2533,14 @@ a {
         height: 46px;
         margin-bottom: 15px;
     }
+<<<<<<< HEAD
     .table_inline-item{
         width: 50%; 
+=======
+
+    .price-mobile>.form__item {
+        width: 50%;
+>>>>>>> 0a60ec5ae1f6b89aedb3c96558c2bb1a345c9b79
     }
     .language{
         margin: 39px;
@@ -2707,7 +2713,7 @@ a {
         padding-top: 50px;
     }
     .choose__bg{
-        margin-bottom: 140px;
+        margin-bottom: 90px;    
     }
 
     .choose__title{
@@ -2742,7 +2748,7 @@ a {
         margin-top: 20px;
         margin-bottom: 30px;
      }
-    .news, .rent__img--text{
+    .news, .rent__img--text, .footer__map--right, .footer__map--left {
         display:none;
     }
     /*rent/footer*/
@@ -2756,12 +2762,15 @@ a {
         bottom: -232px;
     }
     .footer__wave-mobile{
-        display:block;
-        top:-49px;
+        display: block;
+        top: -45px;
+        background-position: center;
+        z-index: 1000;
     }
     .rent{
         padding: 0;
         flex-direction: column;
+        overflow: inherit;
     }
     .rent__img .header__logo{
         margin-top: 30px;
