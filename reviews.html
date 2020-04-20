@@ -325,7 +325,7 @@
         </form>
     </header>
     <div class="container">
-
+        <img src="./img/leafs_pics/mobile_leaf_top.png" alt="" class="mobile_leaf_top">
         <section class="reviews__block">
             <div class="_nav">
                 <a href="index.html" class="nav__1">Главная</a>
@@ -339,10 +339,15 @@
 
             <div class="review__sliders">
                 <div class="slide__img single-item">
-                    <div><img src="img/reviews__img.png" alt="room"></div>
-                    <div><img src="img/reviews__img.png" alt="room"></div>
-                    <div><img src="img/reviews__img.png" alt="room"></div>
+                    <div class="desc__slide"><img src="img/reviews__img.png" alt="room"></div>
+                    <div class="desc__slide"><img src="img/reviews__img.png" alt="room"></div>
+                    <div class="desc__slide"><img src="img/reviews__img.png" alt="room"></div>
                 </div>
+                <div class="slide__img-mobile single-item">
+                <div class="mob__slide"><img src="img/mobile__slide.jpg" alt=""></div>
+                <div class="mob__slide"><img src="img/mobile__slide.jpg" alt=""></div>
+                <div class="mob__slide"><img src="img/mobile__slide.jpg" alt=""></div>
+            </div>
                 <div class="slide__text single-slide">
                     <div class="comment">
                         <p class="selected__text">“Saltanoff” показала мне, что недвижимость в Испании - это просто! Не
@@ -375,19 +380,22 @@
                         <p class="comment__date">28 / 05 / 2020</p>
                     </div>
                 </div>
-                <!--<img src="img/review__map.svg" alt="map" class="review__map">-->
             </div>
+            <button class="btn review__btn" type="submit">Оставить отзыв</button>
         </section>
         <section class="choose">
+            <img src="img/leafs_pics/leaf_wave.png" alt="leaf" class="leaf__top">
             <img src="img/choose__wave.svg" alt="wave" class="choose__wave">
             <div class="choose__bg">
                 <h2 class="choose__title">Выбери лучший из вариантов дома у моря!</h2>
                 <button type="button" class="btn choose__btn">К домам</button>
                 <p class="news__description-mobile">Подпишись на наши новости,
-                чтобы не пропустить горячие предложения! </p>
+                    чтобы не пропустить горячие предложения! </p>
                 <form action="main.php" class="news__form-mobile">
-                <input type="email" placeholder="Введите Ваш e-mail...">
-                <button type="submit" class="btn subscribe mobile">Подписаться!</button>
+                    <input type="email" placeholder="Введите Ваш e-mail...">
+                    <button type="submit" class="btn subscribe mobile">Подписаться!</button>
+                </form>
+                <img src="./img/leafs_pics/moblie_leaf_bottom.png" alt="" class="moblie_leaf_bottom">
             </div>
         </section>
         <aside class="news">
@@ -398,9 +406,12 @@
                 <button type="submit" class="btn subscribe">Подписаться!</button>
             </form>
         </aside>
+
         <section class="rent">
+            <div class="footer__wave-mobile"></div>
             <img src="/img/footer__map--left.svg" alt="map" class="footer__map--left">
             <img src="/img/footer__map--right.svg" alt="map" class="footer__map--right">
+            <img src="img/leafs_pics/leaf__bottom.png" alt="leaf" class="leaf__bottom">
             <div class="rent__img">
                 <a href="index.html"><img src="img/logo.svg" alt="logo" class="header__logo"></a>
                 <p class="rent__img--text">Недвижимость
@@ -420,13 +431,17 @@
                     утопающие в зелени, коммерческие объекты. Средние цены на комфортабельную квартиру на юге страны -
                     от 40 до 140 000 евро.</p>
             </div>
+            <img src="img/leafs_pics/footer_leaf-left.png" alt="leaf" class="footer__leaf--left">
+            <img src="img/leafs_pics/footer_leaf-right.png" alt="leaf" class="footer__leaf--right">
         </section>
     </div>
 
     <footer class="main__footer">
         <div class="footer__wave"></div>
         <div class="footer__top">
+                <div class="footer__line"></div>
             <nav class="main__nav">
+                <h4 class="mobile__nav">Навигация</h4>
                 <ul>
                     <li class="nav__item"><a href="about.html" class="nav__item-a">О нас</a></li>
                     <li class="nav__item"><a href="catalog.html" class="nav__item-a">Наши объекты</a></li>
@@ -434,6 +449,13 @@
                     <li class="nav__item"><a href="contacts.html" class="nav__item-a">Контакты</a></li>
                 </ul>
             </nav>
+            <div class="footer__line"></div>
+            <h4 class="mobile__nav">Контакты</h4>
+            <p class="header__mail">saltanoff@gmail.com</p>
+            <p class="header__phone">+380 (050) 123 45 67</p>
+            <p class="header__phone yellow">+38 (096) 123 45 67</p>
+            <div class="footer__line"></div>
+            <h4 class="mobile__nav">Соц. сети</h4>
             <div class="social">
                 <a href=""><svg class="facebook" width="10" height="16" viewBox="0 0 10 16" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -455,14 +477,15 @@
                     </svg>
                 </a>
             </div>
+            <div class="footer__line"></div>
         </div>
         <p class="copyright">© 2020 Saltanoff. Все права защищены</p>
     </footer>
     </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="js/main.js"></script>
-    <script>$('.single-slide').slick({ dots: true, arrows: false });
-        $('.single-item').slick();</script>
+    <script>
+        $('.single-slide').slick({ dots: true, arrows: false });
+                $('.single-item').slick();</script>
 </body>
 
 </html>

@@ -1927,6 +1927,14 @@ a {
     overflow: hidden;
 }
 
+.review__btn {
+    display: none;
+}
+
+.slide__img-mobile {
+    display: none!important;
+}
+
 ._nav {
     padding-top: 50px;
 }
@@ -1951,6 +1959,10 @@ a {
 
 .review__sliders {
     margin-left: 150px;
+}
+
+.mob__slide img {
+    display: none;
 }
 
 .slide__img {
@@ -3085,6 +3097,142 @@ a {
         width: 224px;
         left: 114px;
         top: 649px;
+    }
+
+    /*Contacts*/
+
+    .contacts__block {
+        grid-template-columns:1fr;
+        grid-gap: 40px;
+    }
+
+    .contacts__block-l {
+        width: 100%;
+    }
+
+    .contacts__block-r {
+        width: 95%;
+        justify-self: center;
+        height: auto;
+    }
+
+    .c__block-r_headline {
+        font-size: 25px;
+        line-height: 30px;
+        margin-top: 30px;
+        margin-left: 33px;
+        margin-right: 33px;
+        margin-bottom: 20px;
+        color:#000;
+    }
+
+    .form-1 {
+        width: 315px;
+        height: 46px;
+        margin-bottom: 15px;
+    }
+
+    .form-2 {
+        width: 315px;
+        height: 153px;
+        margin-bottom: 20px;
+    }
+
+    .form_btn {
+        margin-bottom: 30px;
+    }
+
+    .contacts {
+        margin-bottom:0;
+        z-index: 10;
+        margin-top: 102px;
+    }
+
+    .headline {
+        font-size: 30px;
+        position: absolute;
+        line-height: 35px;
+        color: #fff;
+        left: 26px;
+        top: -67px;
+    }
+ 
+    .grid {
+        margin-top: 18px;
+    }
+
+    /*Review*/
+
+    .review__title {
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 20px;
+    }
+
+    .review__maintext {
+        margin-top: 121px;
+        margin-left: 15px;
+        text-align: start;
+        margin-bottom: 30px;
+    }
+
+    .review__sliders {
+        margin-left: 0;
+    }
+    
+    .slide__text {
+        max-width: 315px;
+        z-index: 1000;
+
+        min-height: 390px;
+        text-align: center;
+        position: absolute;
+        margin-top: 66px;
+        left: 10%;
+        top: 46%;
+    }
+
+    .slide__img {
+        max-width: 344px;
+        margin: 0 auto;
+        max-height: 479px;
+    }
+
+    .comment {
+        margin: 20px;
+        margin-bottom: 56px;
+    }
+
+    .selected__text {
+        max-width: 275px;
+        text-align: left;
+        line-height: 18px;
+    }
+
+    .comment__name {
+        margin-top: 32px;
+        margin-bottom: 5px;
+    }
+
+    .slide__img {
+      display: none!important;
+    }
+
+    .slide__img-mobile {
+        display: initial !important;
+    }
+  
+    .review__btn {
+        width: 168px;
+        font-size: 14px;
+        margin-left: 29%;
+        text-align: center;
+        margin-top: 60%;
+        display: initial;
+    }
+
+    .footer__map--left {
+        display: none;
     }
 
 }

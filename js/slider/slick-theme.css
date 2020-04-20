@@ -203,3 +203,36 @@
     opacity: .75;
     background:rgb(244, 61, 61);
 }
+
+@media(max-width:620px) {
+
+    .slick-dots {
+    bottom: 4%;
+    left:0;
+    }
+
+    .slick-prev, .slick-next {
+        z-index:10000;
+        top: 890px;
+    }
+
+    .slick-prev {
+        left: 55%;
+        height: 46px;
+    }
+
+    .slick-next {
+        right: 11%;
+        height: 46px;
+    }
+
+    .slick-prev:before {
+        width: 10px;
+        height: 10px;
+    }
+
+    .slick-next:before {
+        width: 10px;
+        height: 10px;
+    }
+}
