@@ -3029,6 +3029,8 @@ a {
     }
     .about__description-inner{
         padding: 30px 20px;
+        z-index: 100;
+        background: #F5BA21;
     }
     .about__description{
         width: 315px;
