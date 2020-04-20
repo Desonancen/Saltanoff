@@ -1281,6 +1281,7 @@ a {
     line-height: 24px;
 
     margin-bottom: 25px;
+    max-width: 461px;
 }
 
 .about__description-subtittle{
@@ -1289,6 +1290,7 @@ a {
     font-weight: 300;
     font-size: 21px;
     line-height: 24px;
+    max-width: 461px;
 }
 
 .about__img{
@@ -1326,6 +1328,7 @@ a {
     font-size: 70px;
     line-height: 60px;
     margin-bottom: 50px;
+    max-width: 315px;
 
     color: #F43D3D;
 }
@@ -2997,7 +3000,93 @@ a {
     .social {
         margin-bottom: 30px;
     }
-}
 
+
+    /*About page*/
+
+    ._nav{
+        display: none;
+    }
+    .t-espania{
+        font-size: 100px;
+        left: -2%;
+        top: 68px;
+    }
+    .about__block{
+        margin-bottom: 50px;
+    }
+    .about__description-inner{
+        padding: 30px 20px;
+    }
+    .about__description{
+        width: 315px;
+        height: 460px;
+        margin: 0 auto;
+        margin-top: 500px;
+    }
+    .about__image{
+        width: 357px;
+        height: 353px;
+        z-index: 1;
+    }
+    .about__img{
+        top: -313px;
+        left: -19px;
+    }
+    .about__description-headline{
+        font-size: 30px;
+        margin: 0;
+    }
+    .about__description-flag{
+        width: 88px;
+        height: 58px;
+        top: 30px;
+    }
+    .about__description-tittle, .about__description-subtittle{
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 20px;
+    }
+    
+    /*services*/
+
+    .s__headline {
+        font-size: 30px;
+        margin: 0;
+    }
+    .services{
+        padding-left:15px;
+        padding-right: 15px;
+        padding-bottom: 460px;
+        display: flex;
+        flex-direction: column;
+    }
+    .s_right{
+        margin: 0;
+    }
+    .s_right-item{
+        font-size: 16px;
+    }
+    .s_vector-3 {
+        width: auto;
+        top: -269px;
+    }
+    .s_vector-4 {
+        left: -95px;
+        top: -1667px;
+        z-index: 1;
+    }
+    .s__image-1{
+        width: 253px;
+        left: 0px;
+        top: 503px;
+    }
+    .s__image-2{
+        width: 224px;
+        left: 114px;
+        top: 649px;
+    }
+
+}
 
 
