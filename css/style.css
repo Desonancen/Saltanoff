@@ -2155,7 +2155,7 @@ a {
         margin-left: 13px;
         margin-bottom: 16px;
         padding-bottom: 20px;
-        adding-top: 21px;
+        padding-top: 21px;
     }
     .info-checkbox {
         font-size: 13px;
@@ -2850,6 +2850,10 @@ a {
         position: relative;
         background-color: #F3F9FF;
         padding-left: 15px;
+    }
+
+    .popup {
+        overflow: hidden;
     }
 
     .popup__map {
