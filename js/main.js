@@ -96,7 +96,6 @@ function SelectForm(i) {
     });
   }
   
-  
   // Reset title
   const reset = document.querySelector('.reset');
   reset.addEventListener('click', () => {
@@ -105,4 +104,14 @@ function SelectForm(i) {
 }
 
 findClick();
+
+//Burger-menu 
+$(function() {
+$('.burger').click(function(){
+
+  $('.header__main').toggleClass('popup');
+
+});
+
+});
 

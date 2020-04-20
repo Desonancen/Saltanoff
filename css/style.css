@@ -108,6 +108,7 @@ a {
     margin-right: 15px;
     cursor: pointer;
     display:none;
+    z-index: 10000;
 }
 .topline, .bottomline{
     background: black;
@@ -515,6 +516,10 @@ a {
     font-size: 14px;
     font-weight: 300;
     line-height: 18px;
+}
+
+.popup__map, .popup__leaf, .popup__wave--bottom, .popup__wave--top {
+    display: none;
 }
 
 /*hot*/
@@ -1049,7 +1054,20 @@ a {
     right: 0px;
 }
 
+.mobile__nav {
+    display: none;
+}
+
 /*footer*/
+
+.footer__line {
+    display:none;
+}
+
+.footer__top .header__mail,
+.footer__top .header__phone {
+    display: none;
+}
 
 .main__footer {
     position: relative;
@@ -2481,10 +2499,31 @@ a {
         position: fixed;
         top: 0;
         background-color: white;
-        z-index:9999999;
         padding: 0;
+       /* z-index: 9999;*/
         overflow: hidden;
     }
+    .popup__wave--top {
+     background: url(../img/popup__wave.svg);
+     width: 100%;
+     position: absolute;
+     top: 0px;
+     height: 68px;
+     z-index: 1000;
+     display: none;
+    }
+
+    .popup__wave--bottom {
+        background: url(../img/popup__wave.svg);
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        transform: rotate(180deg);
+        height: 68px;
+        z-index: 1000;
+        display: none;
+       }
+
     .bag, .main__title, .main__nav, .header__phone, .header__mail,
      .header__wave, .line, .first__leaf, .second__leaf, .proposition__hot {
         display: none;
@@ -2569,6 +2608,10 @@ a {
         line-height: 20px;
     }
 
+    .container {
+        overflow: hidden;
+    }
+
     /*Hot*/
     .hot__text{
         padding-top: 126px;
@@ -2647,8 +2690,7 @@ a {
     }
     .mobile_leaf_top{
         display: block;
-        bottom: -174px;
-        z-index:10;
+        top: -277px;
     }
     .see__more {
         margin: 0;
@@ -2707,7 +2749,7 @@ a {
         padding-top: 50px;
     }
     .choose__bg{
-        margin-bottom: 140px;
+        margin-bottom: 60px;
     }
 
     .choose__title{
@@ -2757,11 +2799,13 @@ a {
     }
     .footer__wave-mobile{
         display:block;
-        top:-49px;
+        top:-43px;
+        z-index: 100;
     }
     .rent{
         padding: 0;
         flex-direction: column;
+        overflow: initial;
     }
     .rent__img .header__logo{
         margin-top: 30px;
@@ -2778,12 +2822,13 @@ a {
         color: #F43D3D;
     }
     .rent__description{
-        position: relative
+        position: relative;
         margin-right: 15px;
         margin-left: 15px;
         font-weight: 300;
         font-size: 16px;
         line-height: 24px;
+        max-width: 309px;
     }
     .rent__description::after{
         content:"";
@@ -2797,4 +2842,158 @@ a {
         margin-left: 0;
         text-align:center;
     }
+
+    /*Burger-Popup*/
+    .popup .header__left {
+        display: initial;
+        height: auto;
+        position: relative;
+        background-color: #F3F9FF;
+        padding-left: 15px;
+    }
+
+    .popup__map {
+        position: absolute;
+        display: none;
+    }
+    
+    .popup .slider, .popup>.slider__dots, 
+    .popup .main__form {
+        display: none;
+    }
+
+    .popup .popup__wave--top, 
+    .popup .popup__wave--bottom,
+    .popup .popup__leaf {
+        display: initial;
+    }
+
+    .popup .main__nav,
+    .popup .line, 
+    .popup .header__mail, 
+    .popup .header__phone {
+        display: block;
+    }
+
+    .popup .header__logo {
+        width: 152px;
+        height: 112px;
+        margin-top: 100px;
+        margin-bottom: 40px;
+        margin-left: 0px;
+    }
+
+    .popup .header__left .main__nav {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .popup .popup__leaf {
+        background:url(../img/popup__leaf.svg);
+        width: 100%;
+        position: absolute;
+        height: 453px;
+        z-index: 1000;
+        left: 124px;
+        top: 117px;
+    }
+
+    .popup .popup__swap {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 68px;
+    }
+
+    .popup__swap .header__phone {
+        order:1;
+        margin-bottom: 20px;
+    }
+
+    .popup__swap .header__mail {
+        order:2;
+    }
+
+    .popup .popup__swap .language {
+        order:3;
+        margin-left: 0;
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+    .popup>.header__left>.burger {
+        top:2%;
+    }
+
+    .popup .burger .topline{
+        transform: rotate(-45deg);
+        width: 18px;
+    }
+
+    .popup .burger .bottomline {
+        transform: rotate(45deg);
+        width: 18px;
+    }
+
+    .popup .burger .middleline {
+        margin-left: 1px;
+    }
+
+    .popup .popup__map {
+        display: initial;
+        width: 100%;
+        position: absolute;
+        z-index: 1000;
+        left: 19%;
+    }
+
+    /*Footer*/
+
+    .footer__top .main__nav {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .footer__top {
+        flex-direction: column;
+        margin-left: 14px;
+    }
+
+    .footer__top>.main__nav>ul {
+        flex-direction: column;
+    }
+
+    .nav__item {
+        margin-bottom: 20px;
+    }
+
+    .mobile__nav {
+        display: initial;
+        font-size: 22px;
+        line-height: 25px;
+        color:#F43D3D;
+        margin-bottom: 20px;
+        font-weight: 300;
+    }
+
+    .footer__line {
+        display: initial;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        width: 72%;
+        margin-bottom: 30px;
+    }
+
+    .footer__top .header__mail,
+    .footer__top .header__phone {
+      display: initial;
+    }
+
+    .footer__top .header__phone~.yellow {
+        margin-bottom: 20px;
+    }
+
+    .social {
+        margin-bottom: 30px;
+    }
 }
+
+
+
