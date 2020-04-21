@@ -178,7 +178,6 @@ var body = document.querySelector('body')
 
 link.addEventListener('click',function(evt){
   popup.classList.add('modal__show');
-  body.classList.add('modal__wrapper');
 
 });
   close.addEventListener("click", function (evt){
