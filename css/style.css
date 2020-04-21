@@ -2523,8 +2523,23 @@ a {
 
 }
 
+@media(max-width: 990px){
+    body {
+        zoom: 0.8;
+    }
+}
+
+@media(max-width: 790px){
+    body {
+        zoom: 0.7;
+    }
+}
+
 @media (max-width: 620px), (max-width: 812px) and (max-height: 415px){
 
+    body {
+        zoom: normal;
+    }
     /*Header*/
     .header__left{
         flex-direction: row;
