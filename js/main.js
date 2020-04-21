@@ -43,14 +43,33 @@ if (document.documentElement.clientWidth  <= 620 && Fotorama != null)
 
     
 
-
-let select_form = ["#town", "#type_of_property", "#price_for", "#price_to", "#square", "#bedroom_for", "#bedroom_to"];
-
-
+//Create array elements from a form
+  let select_form = ["#town", "#type_of_property", "#price_for", "#price_to", "#square", "#bedroom_for", "#bedroom_to"];    
 
 function findClick(){
-  const selectSingle = [document.querySelector(select_form[0]), document.querySelector(select_form[1]), document.querySelector(select_form[2]), document.querySelector(select_form[3]), document.querySelector(select_form[4]), document.querySelector(select_form[5]), document.querySelector(select_form[6])]
-  const selectSingle_title = [selectSingle[0].querySelector('.form__item-select'), selectSingle[1].querySelector('.form__item-select'), selectSingle[2].querySelector('.form__item-select'), selectSingle[3].querySelector('.form__item-select'), selectSingle[4].querySelector('.form__item-select'), selectSingle[5].querySelector('.form__item-select'), selectSingle[6].querySelector('.form__item-select')]
+  //select elements
+  let selectSingle = [document.querySelector(select_form[0]), document.querySelector(select_form[1]), document.querySelector(select_form[2]), document.querySelector(select_form[3]),
+  document.querySelector(select_form[4]), document.querySelector(select_form[5]), document.querySelector(select_form[6])];
+
+  let selectSingle_title = [selectSingle[0].querySelector('.form__item-select'), selectSingle[1].querySelector('.form__item-select'),
+  selectSingle[2].querySelector('.form__item-select'), selectSingle[3].querySelector('.form__item-select'),
+  selectSingle[4].querySelector('.form__item-select'), selectSingle[5].querySelector('.form__item-select'),
+  selectSingle[6].querySelector('.form__item-select')];
+
+  if (document.getElementById('catalog') != null) //If we're on the page "Catalog"
+  {
+    //Add to array new elements from another form
+    select_form.push(".town", ".type_of_property", ".square", ".bedroom_for", ".bedroom_to");
+
+    selectSingle.push(document.querySelector(select_form[7]), document.querySelector(select_form[8]),
+    document.querySelector(select_form[9]),document.querySelector(select_form[10]),
+    document.querySelector(select_form[11]));
+
+    selectSingle_title.push(selectSingle[7].querySelector('.form__item-select'),
+    selectSingle[8].querySelector('.form__item-select'), selectSingle[9].querySelector('.form__item-select'),
+    selectSingle[10].querySelector('.form__item-select'), selectSingle[11].querySelector('.form__item-select'));
+    
+  }
 
   selectSingle_title[0].addEventListener('click', () => {
     SelectForm(0);
@@ -79,13 +98,36 @@ function findClick(){
   selectSingle_title[6].addEventListener('click', () => {
     SelectForm(6);
   });
+
+  if (document.getElementById('catalog') != null)
+  {
+    selectSingle_title[7].addEventListener('click', () => {
+      SelectForm(7);
+    });
+
+    selectSingle_title[8].addEventListener('click', () => {
+      SelectForm(8);
+    });
+
+    selectSingle_title[9].addEventListener('click', () => {
+      SelectForm(9);
+    });
+
+    selectSingle_title[10].addEventListener('click', () => {
+      SelectForm(10);
+    });
+
+    selectSingle_title[11].addEventListener('click', () => {
+      SelectForm(11);
+    });
+  }
 }
 
-
+//How work form
 function SelectForm(i) {
-  const selectSingle = document.querySelector(select_form[i]);
-  const selectSingle_title = selectSingle.querySelector('.form__item-select');
-  const selectSingle_labels = selectSingle.querySelectorAll('.__select__label');
+  let selectSingle = document.querySelector(select_form[i]);
+  let selectSingle_title = selectSingle.querySelector('.form__item-select');
+  let selectSingle_labels = selectSingle.querySelectorAll('.__select__label');
   
   // Toggle menu   
   if ('active' === selectSingle.getAttribute('data-state')) {
@@ -104,9 +146,12 @@ function SelectForm(i) {
   
   // Reset title
   const reset = document.querySelector('.reset');
-  reset.addEventListener('click', () => {
-    selectSingle_title.textContent = selectSingle_title.getAttribute('data-default');
-  });
+  if (reset != null)
+  {
+    reset.addEventListener('click', () => {
+      selectSingle_title.textContent = selectSingle_title.getAttribute('data-default');
+    });
+  }
 }
 
 findClick();
