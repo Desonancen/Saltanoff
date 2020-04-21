@@ -35,6 +35,12 @@ if (document.documentElement.clientWidth  <= 1280 && Fotorama != null)
 {
   Fotorama.setAttribute("data-maxwidth", '900');
 }
+if (document.documentElement.clientWidth  <= 620 && Fotorama != null)
+{
+  Fotorama.setAttribute( "data-allowfullscreen", 'false');
+  Fotorama.setAttribute( "data-nav", 'dots');
+}
+
     
 
 

@@ -1801,6 +1801,9 @@ a {
     margin-bottom: 30px;
 }
 
+.btn_center, .house__description-mobile{
+    display: none;
+}
 .text__block {
     font-size: 21px;
     margin-bottom: 30px;
@@ -3364,6 +3367,151 @@ a {
     .modal__wrapper {
           background: #000;
           opacity: 0.8;
+    }
+
+    /*House*/
+    .slider, .noDisplay, .fotorama__arr, .slider__dots,
+    .main__form, .house__title, .info, .calendar, .choose,
+    .news, .rent, .main__footer{
+        display: none !important;
+    }
+    .fotorama__img{
+        height: 100% !important;
+    }
+    .fotorama__stage{
+        height: 339px !important;
+    }
+    .fotorama__nav__shaft{
+        display: flex !important;
+        padding: 0 66px !important;
+    }
+    .fotorama__dot{
+        width: 8px !important;
+        height: 8px !important;
+        border-radius: 6px !important;
+        border: 1px solid #ffffff !important;
+    }
+    .fotorama__active{
+        top:-2px !important;
+    }
+   .fotorama__active .fotorama__dot {
+        width: 12px !important;
+        height: 12px !important;
+        border-width: 6px !important;
+    }
+    .fotorama__nav-wrap{
+        position: absolute;
+        bottom: 22px;
+    }
+    .fotorama__back-arrow{
+        position: absolute;
+        top: 44px;
+        left: 15px;
+        width: 24px;
+        height: 1.5px;
+        background: #fff;
+        z-index: 1;
+        cursor: pointer;
+    }
+    .fotorama__back-arrow::before{
+        content: "";
+        position: absolute;
+        top: -3.1px;
+        left: 0px;
+        width: 7px;
+        height: 1.5px;
+        background: #fff;
+        z-index: 1;
+        transform: rotate(-45deg);
+        cursor: pointer;
+    }
+     .fotorama__back-arrow::after{
+        content: "";
+        position: absolute;
+        top: 3.1px;
+        left: 0px;
+        width: 7px;
+        height: 1.5px;
+        background: #fff;
+        z-index: 1;
+        transform: rotate(45deg);
+        cursor: pointer;
+    }
+    .house__description{
+        background: #fff;
+        margin-bottom: 0;
+    }
+    .house__headline{
+        position: relative;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 30px;
+        color: #F43D3D;
+        max-width: 200px;
+        padding: 25px 0px 20px 15px;
+    }
+     .house__headline::before{
+        content: url("../img/house_img/house_info.svg");
+        position: absolute;
+        top: 31px;
+        right: -59%;
+        cursor: pointer;
+    }
+     .house__headline::after{
+        content: url("../img/house_img/house_calendar.svg");
+        position: absolute;
+        top: 31.5px;
+        right: -79%;
+        cursor: pointer;
+    }
+
+    .house__rent-price, .house__rent, .house__price{
+        display: inline-block;
+    }
+    .btn_center, .house__description-mobile{
+        display: block;
+    }
+    .house__rent-price{
+        padding-left: 15px;
+        padding-bottom: 20px;
+    }
+    .house__rent{
+        font-family: Museo Cyrl;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #000000;
+    }
+    .house__price{
+        font-family: Museo Cyrl;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 25px;
+        text-align: center;
+        color: #F43D3D;
+    }
+    .house__details{  
+        padding-left: 25px;
+        display: flex;
+        font-size: 14px;
+    }
+    .detail__items-house{
+        margin-right: 45px;
+        margin-left: 17px;
+        position: relative;
+    }
+    .text__block{
+        padding: 20px 15px;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0;
+    }
+    .btn_center{
+        text-align: center;
+        padding-bottom: 30px;
     }
 
 }
