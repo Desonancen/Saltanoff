@@ -2523,7 +2523,7 @@ a {
 
 }
 
-@media (max-width: 620px){
+@media (max-width: 620px), (max-width: 812px) and (max-height: 415px){
 
     /*Header*/
     .header__left{
@@ -2871,6 +2871,7 @@ a {
         background: rgba(0, 0, 0, 0.2);
         position: absolute;
         top: -5px;
+        left: 0;
     }
     .copyright{
         margin-left: 0;
