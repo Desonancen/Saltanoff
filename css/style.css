@@ -3371,6 +3371,9 @@ a {
 
     /*House*/
    
+    .fotorama__arr{
+        display: none !important;
+    }
     .fotorama__img{
         height: 100% !important;
     }
