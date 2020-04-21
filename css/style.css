@@ -1586,6 +1586,14 @@ a {
 }
 
 
+.calalog__row__of_items {
+    display: flex;
+}
+
+.th__label {
+    margin-top: 15px;
+}
+
 .catalog 
 .catalog__sort__by-items{
     display: flex;
