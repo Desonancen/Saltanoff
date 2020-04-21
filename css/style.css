@@ -3370,11 +3370,7 @@ a {
     }
 
     /*House*/
-    .slider, .noDisplay, .fotorama__arr, .slider__dots,
-    .main__form, .house__title, .info, .calendar, .choose,
-    .news, .rent, .main__footer{
-        display: none !important;
-    }
+   
     .fotorama__img{
         height: 100% !important;
     }
@@ -3512,6 +3508,9 @@ a {
     .btn_center{
         text-align: center;
         padding-bottom: 30px;
+    }
+    .noDisplay{
+        display: none;
     }
 
 }
