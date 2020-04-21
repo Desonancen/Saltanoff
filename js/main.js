@@ -56,8 +56,9 @@ function findClick(){
   selectSingle[4].querySelector('.form__item-select'), selectSingle[5].querySelector('.form__item-select'),
   selectSingle[6].querySelector('.form__item-select')];
 
-  if (document.getElementById('catalog') != null)
+  if (document.getElementById('catalog') != null) //If we're on the page "Catalog"
   {
+    //Add to array new elements from another form
     select_form.push(".town", ".type_of_property", ".square", ".bedroom_for", ".bedroom_to");
 
     selectSingle.push(document.querySelector(select_form[7]), document.querySelector(select_form[8]),
