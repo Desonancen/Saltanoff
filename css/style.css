@@ -2523,20 +2523,7 @@ a {
 
 }
 
-@media (max-width: 990px)
-{
-    body {
-        zoom: 0.8;
-    }
-}
-
-@media (max-width: 790px)
-{
-    body {
-        zoom: 0.7;
-    }
-}
-@media (max-width: 620px){
+@media (max-width: 620px), (max-width: 812px) and (max-height: 415px){
 
     body {
         zoom: normal;
@@ -2887,6 +2874,7 @@ a {
         background: rgba(0, 0, 0, 0.2);
         position: absolute;
         top: -5px;
+        left: 0;
     }
     .copyright{
         margin-left: 0;
