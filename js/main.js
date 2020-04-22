@@ -157,14 +157,14 @@ function SelectForm(i) {
 findClick();
 
 //Burger-menu 
-$(function() {
-$('.burger').click(function(){
+function BurgerMenu () {
+('.burger'),addEventListener('click',function(evt){
 
-  $('.header__main').toggleClass('popup');
-
-});
+  ('.header__main').toggleClass('popup');
 
 });
+
+};
 
 //Search popup
 
