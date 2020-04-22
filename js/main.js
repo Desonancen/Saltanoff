@@ -172,11 +172,12 @@ BurgerMenu();
 
 var link = document.querySelector('.search');
 var popup = document.querySelector('.modal__search');
-var form = popup.querySelector('.main__form');
-var from = popup.querySelector('town');
-var to = popup.querySelector('square');
-var close = popup.querySelector(".modal__close");
-var body = document.querySelector('body')
+if(popup!=null) {
+  var form = popup.querySelector('.main__form');
+  var from = popup.querySelector('town');
+  var to = popup.querySelector('square');
+  var close = popup.querySelector(".modal__close");
+  var body = document.querySelector('body')
 
 link.addEventListener('click',function(evt){
   popup.classList.add('modal__show');
@@ -197,6 +198,8 @@ link.addEventListener('click',function(evt){
                   }
               }
           });
+}
+
           /*
 form.addEventListener("submit", function (evt) {
   if(!from.value || !to.value) {
