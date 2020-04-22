@@ -168,6 +168,58 @@ function BurgerMenu() {
 
 BurgerMenu();
 
+//Info details
+function InfoDetails() {
+  let infoButton = document.querySelector('.info__btn');
+  let arrow = document.querySelector(".info__arrow");
+  let info = document.querySelector('.info');
+  if(infoButton!=null){ 
+
+  infoButton.addEventListener('click', () => {
+    info.classList.remove('noDisplay');
+    info.classList.add('popup');
+  });
+
+  arrow.addEventListener("click", ()=>{
+    info.classList.remove('popup');
+    info.classList.add('noDisplay');
+});
+window.addEventListener("keydown", function (evt) {
+  if(evt.keyCode===27) {
+      if(info.classList.contains("popup")){
+          info.classList.remove("popup");
+          info.classList.add('noDisplay');
+      }
+  }
+});
+};
+};
+
+InfoDetails();
+
+//Calendar
+
+function Calendar () {
+  let calendarButton = document.querySelector('.house__calendar');
+  let calendarModal = document.querySelector('.calendar');
+  if(calendarButton!=null) {
+    calendarButton.addEventListener('click', () => {
+     calendarModal.classList.add('popup');
+     calendarModal.classList.remove('noDisplay');
+    });
+    window.addEventListener("keydown", function (evt) {
+      if(evt.keyCode===27) {
+          if(calendarModal.classList.contains("popup")){
+            calendarModal.classList.remove("popup");
+            calendarModal.classList.add('noDisplay');
+          }
+      }
+    });
+  }
+};
+
+Calendar();
+
 //Search popup
 
 var link = document.querySelector('.search');
@@ -198,7 +250,7 @@ link.addEventListener('click',function(evt){
                   }
               }
           });
-}
+};
 
           /*
 form.addEventListener("submit", function (evt) {

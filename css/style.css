@@ -46,6 +46,10 @@ a {
     text-decoration:none;
 }
 
+.info__arrow {
+    display: none;
+}
+
 .btn {
     font-size: 16px;
     line-height: 24px;
@@ -3324,8 +3328,8 @@ a {
 
     .modal__close {
         position: fixed;
-        top: 198px;
-        right: 20%;
+        top: 20%;
+        right: 5%;
         width: 22px;
         height: 22px;
         font-size: 0;
@@ -3457,9 +3461,9 @@ a {
         line-height: 30px;
         color: #F43D3D;
         max-width: 200px;
-        padding: 25px 0px 20px 15px;
+        padding: 30px 0px 20px 15px;
     }
-     .house__headline::before{
+     /*.house__headline::before{
         content: url("../img/house_img/house_info.svg");
         position: absolute;
         top: 31px;
@@ -3472,7 +3476,7 @@ a {
         top: 31.5px;
         right: -79%;
         cursor: pointer;
-    }
+    }*/
 
     .house__rent-price, .house__rent, .house__price{
         display: inline-block;
@@ -3480,6 +3484,22 @@ a {
     .btn_center, .house__description-mobile{
         display: block;
     }
+
+    .house__description-title {
+     display: flex;    
+     justify-content: space-between;
+    }
+
+    .house__icons {
+        padding-top: 45px;
+        margin-right: 15px;
+    }
+
+    .info__btn {
+        margin-right: 16px;
+    }
+
+
     .house__rent-price{
         padding-left: 15px;
         padding-bottom: 20px;
@@ -3524,6 +3544,71 @@ a {
     }
     .noDisplay{
         display: none;
+    }
+
+    /*Info Popup*/
+
+    .inner .popup{
+        top: 15%;
+        right: 3%;
+        background: #fff;
+        color: #000;
+        position: fixed;
+        width: 95%;
+        height: auto;
+        padding:30px 20px;
+        
+    }
+
+    .popup {
+        width: 100%;
+    height: 100vh;
+    }
+
+    .popup .proposition__details,
+    .popup .house__btn,
+    .popup .info__price {
+        display: none;
+    }
+
+    .popup .info__title {
+        color: #F43D3D;
+        border: none;
+        font-size: 22px;
+        max-width: 200px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        line-height: 25px;
+        font-weight: 500;
+        text-align: center;
+        padding: 0;
+    }
+
+    .popup .info__arrow {
+        display: initial;
+        left: 7%;
+        top: 20%;
+        position: fixed;
+    }
+
+    .popup .filters {
+        padding-left: 0;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .popup .filter-option {
+        margin-bottom: 9px;
+    }
+
+    /*Calendar Popup*/
+
+    .popup iframe{
+        position: fixed;
+        top: 21%;
+        z-index: 1000;
+        width: 95%;
+        left: 3%;
     }
 
 }
