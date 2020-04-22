@@ -157,14 +157,16 @@ function SelectForm(i) {
 findClick();
 
 //Burger-menu 
-function BurgerMenu () {
-('.burger'),addEventListener('click',function(evt){
-
-  ('.header__main').toggleClass('popup');
-
-});
-
+function BurgerMenu() {
+  let burger = document.querySelector('.burger');
+  
+  burger.addEventListener('click', () => {
+    let headerMain = document.querySelector('.header__main');
+    headerMain.classList.toggle('popup');
+  });
 };
+
+BurgerMenu();
 
 //Search popup
 
