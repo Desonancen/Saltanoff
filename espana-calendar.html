@@ -1,0 +1,903 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0053)https://arenda.demo.cv.ua/espana-calendar?obj=3827 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Description" content="">
+<meta name="Keywords" content="">
+<meta name="Document-state" content="Dynamic">
+<meta name="Robots" content="NOINDEX">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./espana-calendar_files/object-calendar.css">
+  <link rel="stylesheet" href="./espana-calendar_files/fonts.css">
+
+<script type="text/javascript" src="./espana-calendar_files/jquery-1.12.2.min.js.Без названия"></script>
+<script type="text/javascript" src="./espana-calendar_files/jquery-ui.1.11.1.js.Без названия"></script>
+
+<style type="text/css">@import "/jquery-ui.css";</style> 
+<link type="text/css" rel="stylesheet" href="./espana-calendar_files/ui.datepick.css">
+<link type="text/css" rel="stylesheet" href="./espana-calendar_files/jquery.datepick.css">
+<style type="text/css">@import "/css/jquery-ui-timepicker-addon.css";</style> 
+
+<script src="./espana-calendar_files/jquery.plugin.min.js.Без названия"></script>
+<script type="text/javascript" src="./espana-calendar_files/jquery.datepick.min.js.Без названия"></script>
+<script type="text/javascript" src="./espana-calendar_files/jquery.datepick-ru.js.Без названия"></script>
+<script type="text/javascript" src="./espana-calendar_files/jquery-ui-timepicker-addon.js.Без названия"></script>
+
+<script>
+function GotoComment(id) {
+   location.href = $('#href_go_'+id).prop('href');
+}
+
+
+$(document).ready(function() {
+
+   $.datepicker.regional['ru'] = {
+	closeText: 'Закрыть',
+	prevText: '',
+	nextText: '',
+	currentText: 'Сегодня',
+	monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь',
+	'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+	monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн',
+	'Июл','Авг','Сен','Окт','Ноя','Дек'],
+	dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+	dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+	dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+	weekHeader: 'Не',
+	dateFormat: 'dd.mm.yy',
+	firstDay: 1,
+	isRTL: false,
+	showMonthAfterYear: false,
+	yearSuffix: ''
+   };
+   $.datepicker.setDefaults($.datepicker.regional['ru']);
+
+   $.timepicker.regional['ru'] = {
+	timeOnlyTitle: 'Выберите время',
+	timeText: 'Время',
+	hourText: 'Часы',
+	minuteText: 'Минуты',
+	secondText: 'Секунды',
+	millisecText: 'Миллисекунды',
+	timezoneText: 'Часовой пояс',
+	currentText: 'Сейчас',
+	closeText: 'Закрыть',
+	timeFormat: 'HH:mm',
+	amNames: ['AM', 'A'],
+	pmNames: ['PM', 'P'],
+	isRTL: false
+   };
+   $.timepicker.setDefaults($.timepicker.regional['ru']);
+
+      function calendarControll() {
+        if ($(window).width() <= 480) {
+          $('.dopbsp-month-year').addClass('act');
+          $('.DOPBSPCalendar-container').css('width','280px');
+          $('.dopbsp-body').css('height','21px');
+          $('.dopbsp-bind-middle').css('width','36px');
+          $('.DOPBSPCalendar-day').css('width','38px');
+          var q = $('.dopbsp-week .dopbsp-day').each(function () {
+            $(this).html($(this).attr('data-day-dop-mob'));
+          });
+          $('.dopbsp-week .dopbsp-day').css('width','38px');
+          $('.dopbsp-booked dopbsp-style-small').addClass('dopbsp-style-small');
+          /*$('.dopbsp-bind-middle').css({
+            'padding-left':'4px',
+            'width': '30px'
+          });*/
+        } else {
+          $('.dopbsp-month-year').removeClass('act');
+          $('.DOPBSPCalendar-container').css('width','1140px');
+          $('.dopbsp-body').css('height','38px');
+          $('.dopbsp-bind-middle').css('width','114px');
+          $('.DOPBSPCalendar-day').css('width','116px');
+          var q = $('.dopbsp-week .dopbsp-day').each(function () {
+            $(this).html($(this).attr('data-day-dop'));
+          });
+          $('.dopbsp-week .dopbsp-day').css('width','116px');
+        }
+      }
+      calendarControll();
+      $(window).resize( function () {
+        calendarControll();
+      } );
+
+});
+
+
+</script>
+
+</head>
+<body>
+
+
+    <div class="DOPBSPCalendar-wrapper notranslate dopbsp-initialized" id="DOPBSPCalendar42">
+      <div class="DOPBSPCalendar-container" style="max-width: 1140px;">
+          <div class="DOPBSPCalendar-navigation">
+              <div class="dopbsp-month-year">Апрель 2020</div>
+              <a id="next-month-but" href="#"></a>
+              <a style="display:none;" id="prev-month-but" href="#"></a>
+           
+          </div>
+          <div class="DOPBSPCalendar-calendar">
+             <div class="dopbsp-week">
+                  <div class="dopbsp-day" data-day-dop="Понедельник" data-day-dop-mob="Пн" style="width: 116px;">Пн</div>
+                  <div class="dopbsp-day" data-day-dop="Вторник" data-day-dop-mob="Вт" style="width: 116px;">Вт</div>
+                  <div class="dopbsp-day" data-day-dop="Среда" data-day-dop-mob="Ср" style="width: 116px;">Ср</div>
+                  <div class="dopbsp-day" data-day-dop="Четверг" data-day-dop-mob="Чт" style="width: 116px;">Чт</div>
+                  <div class="dopbsp-day" data-day-dop="Пятница" data-day-dop-mob="Пт" style="width: 116px;">Пт</div>
+                  <div class="dopbsp-day" data-day-dop="Суббота" data-day-dop-mob="Суб" style="width: 116px;">Сб</div>
+                  <div class="dopbsp-day" data-day-dop="Воскресенье" data-day-dop-mob="Вск" style="width: 116px;">Нд</div>
+              </div>
+              <div class="DOPBSPCalendar-month" id="DOPBSPCalendar-month-1143827">
+		<div class="DOPBSPCalendar-day dopbsp-past-day" iid="" style="width: 116px;">
+                      <div class="dopbsp-bind-left">
+                          <div class="dopbsp-head">&nbsp;</div>
+                          <div class="dopbsp-body" style="height: 38px;">&nbsp;</div>
+                      </div>
+                      <div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px;">
+                          <div class="dopbsp-head">
+                              <div class=" dopbsp-none"></div>
+                              <div class=" dopbsp-none"></div>
+                              
+                          </div>
+                          <div class="dopbsp-body" style="height: 38px;">
+	                      	<div class="dopbsp-day">30</div>
+	                        <div class="dopbsp-none"></div>
+	                          <div class="dopbsp-none"></div>
+	                          <div class="dopbsp-price">&nbsp;</div>
+	                          <br class="DOPBSPCalendar-clear">
+	                          <div class="dopbsp-available">&nbsp;</div>
+                          </div>
+                      </div>
+                      <div class="dopbsp-bind-right">
+                          <div class="dopbsp-head">&nbsp;</div>
+                          <div class="dopbsp-body" style="height: 38px;">&nbsp;</div>
+                      </div>
+                  </div>	
+	
+		<div class="DOPBSPCalendar-day dopbsp-past-day" iid="" style="width: 116px;">
+                      <div class="dopbsp-bind-left">
+                          <div class="dopbsp-head">&nbsp;</div>
+                          <div class="dopbsp-body" style="height: 38px;">&nbsp;</div>
+                      </div>
+                      <div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px;">
+                          <div class="dopbsp-head">
+                              <div class=" dopbsp-none"></div>
+                              <div class=" dopbsp-none"></div>
+                              
+                          </div>
+                          <div class="dopbsp-body" style="height: 38px;">
+                          <div class="dopbsp-day">31</div>
+                              <div class="dopbsp-none"></div>
+                              <div class="dopbsp-none"></div>
+                              <div class="dopbsp-price">&nbsp;</div>
+                              <br class="DOPBSPCalendar-clear">
+                              <div class="dopbsp-available">&nbsp;</div>
+                          </div>
+                      </div>
+                      <div class="dopbsp-bind-right">
+                          <div class="dopbsp-head">&nbsp;</div>
+                          <div class="dopbsp-body" style="height: 38px;">&nbsp;</div>
+                      </div>
+                  </div>	
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-available" iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
+			<div class="dopbsp-head">
+				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
+			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">01</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-available" iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
+			<div class="dopbsp-head">
+				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
+			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">02</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-available" iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
+			<div class="dopbsp-head">
+				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
+			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">03</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-available" iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
+			<div class="dopbsp-head">
+				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
+				
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
+			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">04</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-available" iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
+			<div class="dopbsp-head">
+				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
+				
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
+			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">05</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-available" iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
+			<div class="dopbsp-head">
+				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
+			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">06</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-available" iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
+			<div class="dopbsp-head">
+				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
+			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">07</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-available" iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
+			<div class="dopbsp-head">
+				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
+			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">08</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-available" iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
+			<div class="dopbsp-head">
+				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
+			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">09</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-available" iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
+			<div class="dopbsp-head">
+				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
+			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">10</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-available" iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
+			<div class="dopbsp-head">
+				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
+			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">11</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-available" iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
+			<div class="dopbsp-head">
+				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
+			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">12</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-available" iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
+			<div class="dopbsp-head">
+				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
+			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">13</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-available" iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
+			<div class="dopbsp-head">
+				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
+			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">14</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month " iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
+			<div class="dopbsp-head">
+				
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-available" style="border-right: 1px solid #68ba68 !important;width: 51% !important;"></div><div class="dopbsp-ci dopbsp-booked" style="border-left: 1px solid #dd6464 !important;"></div>
+			<div class="dopbsp-co dopbsp-available dopbsp-day">15</div><div class="dopbsp-ci dopbsp-booked dopbsp-day">15</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available" style="width: 48%;float: left;padding-left: 3px;"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div><div class="dopbsp-available" style="width: 50%;display: inline;padding-left: 3px;"><span class="dopbsp-no-available-text" style="display: inline;">занято</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-booked" iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
+			<div class="dopbsp-head">
+				<div class="dopbsp-ci dopbsp-booked dopbsp-day"></div>
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-booked"></div><div class="dopbsp-ci dopbsp-booked"></div>
+			<div class="dopbsp-co dopbsp-booked dopbsp-day">16</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">забронировано</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-booked" iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
+			<div class="dopbsp-head">
+				<div class="dopbsp-ci dopbsp-booked dopbsp-day"></div>
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-booked"></div><div class="dopbsp-ci dopbsp-booked"></div>
+			<div class="dopbsp-co dopbsp-booked dopbsp-day">17</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">забронировано</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month " iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
+			<div class="dopbsp-head">
+				
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-booked" style="border-right: 1px solid #dd6464 !important;width:51% !important;"></div><div class="dopbsp-ci dopbsp-available" style="border-left: 1px solid #68ba68 !important;"></div>
+			<div class="dopbsp-co dopbsp-booked dopbsp-day">18</div>
+			<div class="dopbsp-ci dopbsp-available dopbsp-day">18</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available" style="width: 48%;float: left;padding-left: 3px;"><span class="dopbsp-no-available-text" style="display: inline;">Занято</span></div><div class="dopbsp-available" style="width: 50%;display: inline;padding-left: 3px;"><span class="dopbsp-no-available-text" style="display: inline;">Доступно</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-available" iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
+			<div class="dopbsp-head">
+				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
+			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">19</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month " iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
+			<div class="dopbsp-head">
+				<div class="dopbsp-co dopbsp-available dopbsp-day">20</div>
+				<div class="dopbsp-ci dopbsp-booked dopbsp-day">20</div>
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-available" style="border-right: 1px solid #68ba68 !important;width: 51% !important;"></div><div class="dopbsp-ci dopbsp-booked" style="border-left: 1px solid #dd6464 !important;"></div>
+				<div class="dopbsp-price"></div>
+				
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available" style="width: 48%;float: left;padding-left: 3px;"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div><div class="dopbsp-available" style="width: 50%;display: inline;padding-left: 3px;"><span class="dopbsp-no-available-text" style="display: inline;">занято</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-booked" iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
+			<div class="dopbsp-head">
+				<div class="dopbsp-ci dopbsp-booked dopbsp-day"></div>
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-booked"></div><div class="dopbsp-ci dopbsp-booked"></div>
+			<div class="dopbsp-co dopbsp-booked dopbsp-day">21</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">забронировано</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-booked" iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
+			<div class="dopbsp-head">
+				<div class="dopbsp-ci dopbsp-booked dopbsp-day"></div>
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-booked"></div><div class="dopbsp-ci dopbsp-booked"></div>
+			<div class="dopbsp-co dopbsp-booked dopbsp-day">22</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">забронировано</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month " iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px;  ">
+			<div class="dopbsp-head">
+				
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-booked" style="border-right: 1px solid #dd6464 !important;width:51% !important;"></div><div class="dopbsp-ci dopbsp-available" style="border-left: 1px solid #68ba68 !important;"></div>
+			<div class="dopbsp-co dopbsp-booked dopbsp-day">23</div>
+			<div class="dopbsp-ci dopbsp-available dopbsp-day">23</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available" style="width: 48%;float: left;padding-left: 3px;"><span class="dopbsp-no-available-text" style="display: inline;">Занято</span></div><div class="dopbsp-available" style="width: 50%;display: inline;padding-left: 3px;"><span class="dopbsp-no-available-text" style="display: inline;">Доступно</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-available" iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px;  ">
+			<div class="dopbsp-head">
+				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
+			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">24</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-available" iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px;  ">
+			<div class="dopbsp-head">
+				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
+			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">25</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-available" iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px;  ">
+			<div class="dopbsp-head">
+				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
+			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">26</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-available" iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px;  ">
+			<div class="dopbsp-head">
+				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
+			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">27</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-available" iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px;  ">
+			<div class="dopbsp-head">
+				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
+			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">28</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-available" iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px;  ">
+			<div class="dopbsp-head">
+				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
+			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">29</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-available" iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 38px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px;  ">
+			<div class="dopbsp-head">
+				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
+			</div>	
+			<div class="dopbsp-body" style="height: 38px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
+			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">30</div>
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 38px;"></div>
+	        </div>
+	</div>
+	
+		<div class="DOPBSPCalendar-day dopbsp-past-day" iid="" style="width: 116px;">
+                      <div class="dopbsp-bind-left">
+                          <div class="dopbsp-head">&nbsp;</div>
+                          <div class="dopbsp-body" style="height: 38px;">&nbsp;</div>
+                      </div>
+                      <div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px;">
+                          <div class="dopbsp-head">
+                              <div class=" dopbsp-none"></div>
+                              <div class=" dopbsp-none"></div>
+                              <div class="dopbsp-day">01</div>
+                          </div>
+                          <div class="dopbsp-body" style="height: 38px;">
+                              <div class="dopbsp-none"></div>
+                              <div class="dopbsp-none"></div>
+                              <div class="dopbsp-price">&nbsp;</div>
+                              <br class="DOPBSPCalendar-clear">
+                              <div class="dopbsp-available">&nbsp;</div>
+                          </div>
+                      </div>
+                      <div class="dopbsp-bind-right">
+                          <div class="dopbsp-head">&nbsp;</div>
+                          <div class="dopbsp-body" style="height: 38px;">&nbsp;</div>
+                      </div>
+                  </div>	
+	
+		<div class="DOPBSPCalendar-day dopbsp-past-day" iid="" style="width: 116px;">
+                      <div class="dopbsp-bind-left">
+                          <div class="dopbsp-head">&nbsp;</div>
+                          <div class="dopbsp-body" style="height: 38px;">&nbsp;</div>
+                      </div>
+                      <div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px;">
+                          <div class="dopbsp-head">
+                              <div class=" dopbsp-none"></div>
+                              <div class=" dopbsp-none"></div>
+                              <div class="dopbsp-day">02</div>
+                          </div>
+                          <div class="dopbsp-body" style="height: 38px;">
+                              <div class="dopbsp-none"></div>
+                              <div class="dopbsp-none"></div>
+                              <div class="dopbsp-price">&nbsp;</div>
+                              <br class="DOPBSPCalendar-clear">
+                              <div class="dopbsp-available">&nbsp;</div>
+                          </div>
+                      </div>
+                      <div class="dopbsp-bind-right">
+                          <div class="dopbsp-head">&nbsp;</div>
+                          <div class="dopbsp-body" style="height: 38px;">&nbsp;</div>
+                      </div>
+                  </div>	
+	
+		<div class="DOPBSPCalendar-day dopbsp-past-day" iid="" style="width: 116px;">
+                      <div class="dopbsp-bind-left">
+                          <div class="dopbsp-head">&nbsp;</div>
+                          <div class="dopbsp-body" style="height: 38px;">&nbsp;</div>
+                      </div>
+                      <div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px;">
+                          <div class="dopbsp-head">
+                              <div class=" dopbsp-none"></div>
+                              <div class=" dopbsp-none"></div>
+                              <div class="dopbsp-day">03</div>
+                          </div>
+                          <div class="dopbsp-body" style="height: 38px;">
+                              <div class="dopbsp-none"></div>
+                              <div class="dopbsp-none"></div>
+                              <div class="dopbsp-price">&nbsp;</div>
+                              <br class="DOPBSPCalendar-clear">
+                              <div class="dopbsp-available">&nbsp;</div>
+                          </div>
+                      </div>
+                      <div class="dopbsp-bind-right">
+                          <div class="dopbsp-head">&nbsp;</div>
+                          <div class="dopbsp-body" style="height: 38px;">&nbsp;</div>
+                      </div>
+                  </div>	
+	</div>
+</div>
+
+      </div>
+
+    </div>
+
+
+</body></html>
