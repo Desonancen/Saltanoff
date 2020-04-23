@@ -40,6 +40,12 @@ if (document.documentElement.clientWidth  <= 620 && Fotorama != null)
   Fotorama.setAttribute( "data-allowfullscreen", 'false');
   Fotorama.setAttribute( "data-nav", 'dots');
 }
+if (document.documentElement.clientWidth  <= 812 && 
+    document.documentElement.clientHeight  <= 415 && Fotorama != null)
+{
+  Fotorama.setAttribute( "data-allowfullscreen", 'false');
+  Fotorama.setAttribute( "data-nav", 'dots');
+}
 
     
 
@@ -173,16 +179,15 @@ function InfoDetails() {
   let infoButton = document.querySelector('.info__btn');
   let arrow = document.querySelector(".info__arrow");
   let info = document.querySelector('.info');
+  let modal = document.querySelector('.modal__search')
   if(infoButton!=null){ 
 
   infoButton.addEventListener('click', () => {
-    info.classList.remove('noDisplay');
-    info.classList.add('popup');
+    modal.classList.add('modal__show');
   });
 
   arrow.addEventListener("click", ()=>{
-    info.classList.remove('popup');
-    info.classList.add('noDisplay');
+    modal.classList.remove('modal__show');
 });
 window.addEventListener("keydown", function (evt) {
   if(evt.keyCode===27) {

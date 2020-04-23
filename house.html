@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/fonts.css">
@@ -330,6 +330,98 @@
                 </div>
             <h1 class="house__title noDisplay">Вилла в Costa-Blanca Mallorca</h1>
 
+            <div class="modal__search">
+                <div class="darkness"></div>
+                <div class="info noDisplayDesk">
+                    <h2 class="info__title">Детальная информация</h2>
+                    <svg class="info__arrow" width="24" height="10" viewBox="0 0 24 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 5.00234C24 4.68384 23.7208 4.42623 23.3756 4.42623H2.12183L5.85787 0.978923C6.10152 0.754099 6.10152 0.393443 5.85787 0.168618C5.61421 -0.0562061 5.22335 -0.0562061 4.9797 0.168618L0.182741 4.59485C-0.0609137 4.81967 -0.0609137 5.18033 0.182741 5.40515L4.9797 9.83138C5.10152 9.94379 5.25888 10 5.42132 10C5.58376 10 5.74112 9.94379 5.86294 9.83138C6.1066 9.60656 6.1066 9.2459 5.86294 9.02108L2.1269 5.57377H23.3858C23.7208 5.57377 24 5.32084 24 5.00234Z" fill="black"/>
+                        </svg>
+                        
+                    <ul class="proposition__details noDisplay">
+                        <li class="detail__items"> <img src="img/house_img/house.svg" alt="house"
+                                class="items__icons">115 м2
+                        </li>
+                        <li class="detail__items"> <img src="img/house_img/bed.svg" alt="bed" class="items__icons">5
+                            cпален
+                        </li>
+                        <li class="detail__items"><img src="img/house_img/shower.svg" alt="shower"
+                                class="items__icons">3
+                            ванные</li>
+                    </ul>
+                    <form action="main.php" method="POST" class="filter">
+                        <ul class="filters">
+                            <li class="filter-option "><label class="info-checkbox"><input type="checkbox"
+                                        class="filter-input visually-hidden" id="
+                                        mountain" name="
+                                        mountain"> <span class="checkbox-indicator"></span>
+                                    В горах:</label></li>
+                            <li class="filter-option"><label class="info-checkbox"><input type="checkbox"
+                                        class="filter-input visually-hidden" id="sea" name="sea" checked>
+                                    <span class="checkbox-indicator"></span>
+                                    Возле моря:</label></li>
+                            <li class="filter-option"><label class="info-checkbox"><input type="checkbox"
+                                        class="filter-input visually-hidden" name="lake" id="lake"> <span
+                                        class="checkbox-indicator"></span>
+                                    Возле озера:</label></li>
+                            <li class="filter-option"><label class="info-checkbox"><input type="checkbox"
+                                        class="filter-input visually-hidden" name="big city" id="bigcity"> <span
+                                        class="checkbox-indicator"></span>
+                                    В большом городе:</label></li>
+                            <li class="filter-option"><label class="info-checkbox"><input type="checkbox"
+                                        class="filter-input visually-hidden" name="new house" id="newhouse" checked> <span
+                                        class="checkbox-indicator"></span>
+                                    Новый дом:</label></li>
+                            <li class="filter-option"><label class="info-checkbox"><input type="checkbox"
+                                        class="filter-input visually-hidden" name="construction" id="construction">
+                                    <span class="checkbox-indicator"></span>
+                                    Строиться:</label></li>
+                            <li class="filter-option"><label class="info-checkbox"><input type="checkbox"
+                                        class="filter-input visually-hidden" name="resale" id="resale"> <span
+                                        class="checkbox-indicator"></span>
+                                    Вторичная недвижимость:</label></li>
+                            <li class="filter-option"><label class="info-checkbox"><input type="checkbox"
+                                        class="filter-input visually-hidden" name="credit" id="credit"checked> <span
+                                        class="checkbox-indicator"></span>
+                                    Возможно в кредит:</label></li>
+                            <li class="filter-option"><label class="info-checkbox"><input type="checkbox"
+                                        class="filter-input visually-hidden" name="pool" id="pool" checked> <span
+                                        class="checkbox-indicator"></span>
+                                    Бассейн:</label></li>
+                            <li class="filter-option"><label class="info-checkbox"><input type="checkbox"
+                                        class="filter-input visually-hidden" name="protect" id="protect"> <span
+                                        class="checkbox-indicator"></span>
+                                    Охраняется:</label></li>
+                            <li class="filter-option"><label class="info-checkbox"><input type="checkbox"
+                                        class="filter-input visually-hidden" name="shop" id="shop" checked> <span
+                                        class="checkbox-indicator"></span>
+                                    Рядом магазин:</label></li>
+                            <li class="filter-option"><label class="info-checkbox"><input type="checkbox"
+                                        class="filter-input visually-hidden" name="solarium" id="solarium"> <span
+                                        class="checkbox-indicator"></span>
+                                    Солярий:</label></li>
+                            <li class="filter-option"><label class="info-checkbox"><input type="checkbox"
+                                        class="filter-input visually-hidden" name="
+                                        conditioner" id="
+                                        conditioner" checked> <span class="checkbox-indicator"></span>
+                                    Кондиционер:</label></li>
+                            <li class="filter-option"><label class="info-checkbox"><input type="checkbox"
+                                        class="filter-input visually-hidden" name="
+                                        terrace" id="
+                                        terrace" checked> <span class="checkbox-indicator"></span>
+                                   Терасса:</label></li>
+                        </ul>
+                        <button type="submit" class="btn house__btn">Оставить заявку</button>
+                    </form>
+                    <div class="info__price noDisplay">
+                    <p class="proposition__description noDisplay">Аренда:</p>
+                    <p class="proposition__price noDisplay">$3250</p>
+                </div>
+                </div>
+               
+            </div>
+
+
             <div class="inner">
 
                 <div class="info noDisplay">
@@ -506,7 +598,7 @@
             <img src="img/choose__wave.svg" alt="wave" class="choose__wave">
             <div class="choose__bg">
                 <h2 class="choose__title">Выбери лучший из вариантов дома у моря!</h2>
-                <button type="button" class="btn choose__btn">К домам</button>
+                <a href="./contacts.html"><button type="button" class="btn choose__btn">К домам</button></a>
                 <p class="news__description-mobile">Подпишись на наши новости,
                 чтобы не пропустить горячие предложения! </p>
                 <form action="main.php" class="news__form-mobile">
