@@ -181,19 +181,20 @@
 }
 
 .dopbsp-week{
+    font-family: Museo Cyrl;
     margin: 0;
     overflow: hidden;
     background: #fff;
     display: grid;
+    padding-top: 50px;
     grid-template-columns: repeat(7, 1fr);
+    font-size: 16px;
+    line-height: 24px;
+}
 }
 
 .dopbsp-week .dopbsp-day{
-    color: #898989;
     display: block;
-    font-family: 'Open Sans', sans-serif !important;
-    font-size: 12px;
-    line-height: 20px;
     float: left;
     margin: 0;
     padding: 0;
