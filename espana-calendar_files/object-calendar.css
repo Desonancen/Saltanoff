@@ -14,11 +14,22 @@
 
 @import url(https://fonts.googleapis.com/css?family=Myseo+Cyrl:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 .DOPBSPCalendar-wrapper{
      -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
-    margin: 20px 0;
     min-width: 240px;
     overflow: hidden;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -37,7 +48,9 @@
 .DOPBSPCalendar-container{
     background: none;
     float: left;
-    font-family: 'Open Sans', sans-serif !important;
+    font-family: Museo Cyrl !important;
+    font-style: normal;
+    font-weight: normal;
     font-size: 13px;
     line-height: 20px;
     margin: 0;
@@ -69,7 +82,7 @@
  * ***************************************************************************** Begin navigation.
  */
 .DOPBSPCalendar-navigation{
-    height:124px;
+    height:104px;
     background: #F5BA21;
     border-top: 10px solid #F43D3D;
     border-bottom: 10px solid #F43D3D;
@@ -81,26 +94,27 @@
 .DOPBSPCalendar-navigation .dopbsp-next-btn,
 .DOPBSPCalendar-navigation .dopbsp-previous-btn,
 .DOPBSPCalendar-navigation .dopbsp-remove-btn{
-    background-color: #c9c9c9;
-    background-image:url('/images/sprite.png');
     display: block;
-    height: 40px;
+    height: 24px;
     margin: 0;
     padding: 0;
     position: absolute;
-    width: 40px;
+    width: 12px;
     -webkit-transition: background-color 600ms linear;
     -moz-transition: background-color 600ms linear;
     -o-transition: background-color 600ms linear;
     transition: background-color 600ms linear;
 }
 
+
+/*
 .DOPBSPCalendar-navigation .dopbsp-add-btn:hover,
 .DOPBSPCalendar-navigation .dopbsp-next-btn:hover,
 .DOPBSPCalendar-navigation .dopbsp-previous-btn:hover,
 .DOPBSPCalendar-navigation .dopbsp-remove-btn:hover{
     background-color: #464646;
 }
+*/
 
 .DOPBSPCalendar-navigation .dopbsp-add-btn{
     background-position: 0 0;
@@ -120,17 +134,59 @@
 }
 
 .DOPBSPCalendar-navigation .dopbsp-previous-btn{
-    background-position: -80px 0;
     display: none;
-    right: 51px;
-    top: 9px;
+    left: 51px;
+    top: 5px;
 }
 
 .DOPBSPCalendar-navigation .dopbsp-next-btn{
-    background-position: -120px 0;
     right: 9px;
-    top: 9px;
+    top: 5px;
 }
+
+.DOPBSPCalendar-navigation .dopbsp-next-btn::before {
+    content: "";
+    width: 3px;
+    height: 12px;
+    background-color: #000;
+    position: absolute;
+    top: 33px;
+    right: 29px;
+    transform: rotate(45deg);
+}
+
+.DOPBSPCalendar-navigation .dopbsp-next-btn::after {
+    content: "";
+    width: 3px;
+    height: 12px;
+    background-color: #000;
+    position: absolute;
+    top: 26px;
+    right: 29px;
+    transform: rotate(-45deg);
+} 
+
+.dopbsp-previous-btn::before {
+    content: "";
+    width: 3px;
+    height: 12px;
+    background-color: #000;
+    position: absolute;
+    top: 33px;
+    right: 29px;
+    transform: rotate(-45deg);
+}
+
+.dopbsp-previous-btn::after {
+    content: "";
+    width: 3px;
+    height: 12px;
+    background-color: #000;
+    position: absolute;
+    top: 26px;
+    right: 29px;
+    transform: rotate(45deg);
+} 
 
 .DOPBSPCalendar-navigation .dopbsp-add-btn .dopbsp-info,
 .DOPBSPCalendar-navigation .dopbsp-next-btn .dopbsp-info,
@@ -139,7 +195,7 @@
     background-color: #252525;
     color: #ffffff;
     display: none;
-    font-family: 'Open Sans' !important;
+    
     font-size: 12px;
     font-weight: 300;
     line-height: 20px;
@@ -171,8 +227,7 @@
     line-height: 35px;
     text-align: center;
     color: #000000;
-    margin-top: 35px;
-    padding: 9px 9px 10px 9px;
+    margin-top: 25px;
 }
 
 .DOPBSPCalendar-navigation .dopbsp-month-year.dopbsp-style-small{
@@ -190,8 +245,9 @@
     grid-template-columns: repeat(7, 1fr);
     font-size: 16px;
     line-height: 24px;
+    text-transform: uppercase;
 }
-}
+
 
 .dopbsp-week .dopbsp-day{
     display: block;
@@ -220,18 +276,18 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     justify-self: center;
-    grid-gap: 30px;
+    grid-row-gap: 30px;
     align-self: center;
     background-color: white;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 .DOPBSPCalendar-month-year{
     background-color: #eeeeee;
     border: 1px solid #cccccc;
     color: #464646;
-    font-family: 'Open Sans', sans-serif;
+    
     font-size: 18px;
     font-weight: 300;
     line-height: 38px;
@@ -248,9 +304,9 @@
 .DOPBSPCalendar-day{
     clear: none !important;
     float: left;
-    margin:  0 0 2px 0;
+    margin: 0 0px 2px 2px;
     padding: 0;
-    margin-left: 9%
+    margin-left: 9%;
 }
 
 .DOPBSPCalendar-day .dopbsp-bind-left,
@@ -291,7 +347,7 @@
 .DOPBSPCalendar-day .dopbsp-bind-right .dopbsp-body{
     background-color: #ffffff !important;
     border-bottom: 1px solid #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
-    font-family: 'Open Sans', sans-serif !important;
+    
     font-size: 12px !important;
     font-weight: 300 !important;
     line-height: 19px !important;
@@ -342,7 +398,7 @@
 .DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-head .dopbsp-day{
     color: #ffffff;
     float: left;
-    font-family: 'Open Sans', sans-serif !important;
+    
     font-size: 12px !important;
     font-weight: 300 !important;
     line-height: 17px !important;
@@ -366,7 +422,7 @@
     top: -1px;
     width: 50% !important;
     color: #ffffff;
-    font-family: 'Open Sans', sans-serif !important;
+    
     text-align: left;
     text-indent: 4px;
     line-height: 15px;
@@ -386,7 +442,7 @@
     top: -1px;
     width: 50% !important;
     color: #ffffff;
-    font-family: 'Open Sans', sans-serif !important;
+    
     text-align: left;
     text-indent: 4px;
     line-height: 15px;
@@ -463,7 +519,7 @@
     color: #222222 !important;
     display: block;
     float: none !important;
-    font-family: 'Open Sans', sans-serif !important;
+    
     font-size: 12px !important;
     font-weight: 300 !important;
     line-height: 19px !important;
@@ -543,7 +599,7 @@
 .DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-body .dopbsp-old-price{
     color: #acacac;
     float: left;
-    font-family: 'Open Sans', sans-serif !important;
+    
     font-size: 12px !important;
     font-weight: 300;
     line-height: 20px !important;
@@ -555,7 +611,7 @@
 .DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-body .dopbsp-price{
     color: #464646;
     float: left;
-    font-family: 'Open Sans', sans-serif !important;
+    
     font-size: 12px !important;
     line-height: 20px !important;
     margin: 0 !important;
@@ -564,7 +620,7 @@
 
 .DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-body .dopbsp-available{
     color: #acacac;
-    font-family: 'Open Sans', sans-serif !important;
+    
     font-size: 11px !important;
     font-weight: 300;
     line-height: 18px !important;
@@ -581,7 +637,7 @@
 }
 .DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-body .dopbsp-info-body{
     color: #acacac;
-    font-family: 'Open Sans', sans-serif !important;
+    
     font-size: 11px !important;
     font-style: italic;
     font-weight: 300;
@@ -640,6 +696,8 @@
 .DOPBSPCalendar-day.dopbsp-next-month{
     opacity: 0.5;
 }
+
+
 
 /*
  * Available day.
@@ -937,7 +995,7 @@
     background-color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
     color: #ffffff;
     float: left;
-    font-family: 'Open Sans', sans-serif !important;
+    
     font-size: 12px !important;
     font-weight: 300 !important;
     line-height: 16px !important;
@@ -948,7 +1006,7 @@
 .DOPBSPCalendar-hour .dopbsp-bind-middle .dopbsp-price-promo{
     color: #464646;
     float: left;
-    font-family: 'Open Sans', sans-serif !important;
+    
     font-size: 12px !important;
     line-height: 16px !important;
     padding: 0 0 0 10px !important;
@@ -957,7 +1015,7 @@
 .DOPBSPCalendar-hour .dopbsp-bind-middle .dopbsp-old-price{
     color: #acacac;
     float: left;
-    font-family: 'Open Sans', sans-serif !important;
+    
     font-size: 12px !important;
     line-height: 16px !important;
     padding: 0 0 0 5px !important;
@@ -967,7 +1025,7 @@
 .DOPBSPCalendar-hour .dopbsp-bind-middle .dopbsp-available{
     color: #acacac;
     float: left;
-    font-family: 'Open Sans', sans-serif !important;
+    
     font-size: 11px !important;
     line-height: 16px !important;
     padding: 0 10px !important;
@@ -976,7 +1034,7 @@
 .DOPBSPCalendar-hour .dopbsp-bind-middle .dopbsp-info-body{
     color: #acacac;
     float: left;
-    font-family: 'Open Sans', sans-serif !important;
+    
     font-size: 11px !important;
     font-style: italic;
     font-weight: 300;
@@ -1229,7 +1287,7 @@
  */
 .DOPBSPCalendar-sidebar,
 .DOPBSPCalendar-outer-sidebar{
-    font-family: 'Open Sans', sans-serif !important;
+    
     overflow: hidden;
     padding: 0;
 }
@@ -1504,7 +1562,7 @@
 .DOPBSPCalendar-outer-sidebar .dopbsp-module h4{
     color: #464646 !important;
     display: block !important;
-    font-family: 'Open Sans', sans-serif !important;
+    
     font-size: 18px !important;
     font-weight: normal !important;
     line-height: 20px !important;
@@ -1538,7 +1596,7 @@
     background-color: #f1705c;
     color: #ffffff;
     display: none;
-    font-family: 'Open Sans', sans-serif;
+    
     font-size: 13px;
     font-weight: 300;
     line-height: 20px;
@@ -1565,7 +1623,7 @@
     color: #666666;
     display: block;
     cursor: pointer;
-    font-family: 'Open Sans', sans-serif;
+    
     font-size: 13px;
     font-style: italic;
     font-weight: 300;
@@ -1632,7 +1690,7 @@
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     color: #666666;
-    font-family: 'Open Sans', sans-serif;
+    
     font-size: 13px;
     font-weight: 300;
     height: auto;
@@ -1688,7 +1746,7 @@
     box-sizing: content-box;
     color: #666666;
     display: block;
-    font-family: 'Open Sans', sans-serif;
+    
     font-size: 13px;
     font-weight: 300;
     line-height: 20px;
@@ -1861,7 +1919,7 @@
     color: #ffffff;
     cursor: pointer;
     display: none;
-    font-family: 'Open Sans', sans-serif;
+    
     font-size: 17px;
     font-weight: 300;
     line-height: 40px;
@@ -1938,7 +1996,7 @@
 .DOPBSPCalendar-sidebar .DOPSelect .dopselect-select .dopselect-selection,
 .DOPBSPCalendar-outer-sidebar .DOPSelect .dopselect-select .dopselect-selection{
     color: #666666 !important;
-    font-family: 'Open Sans', sans-serif !important;
+    
     font-size: 13px !important;
     font-weight: 300 !important;
     height: 28px !important;
@@ -1970,7 +2028,7 @@
 .DOPBSPCalendar-outer-sidebar .DOPSelect.dopselect-single ul li{
     background: #ffffff !important;
     color: #666666 !important;
-    font-family: 'Open Sans', sans-serif !important;
+    
     font-size: 12px !important;
     font-weight: 300 !important;
     height: 30px !important;
@@ -2047,7 +2105,7 @@
 .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-message{
     background: #464646;
     color: #ffffff;
-    font-family: 'Open Sans', sans-serif;
+    
     font-size: 13px;
     font-weight: 300;
     line-height: 20px;
@@ -2090,7 +2148,7 @@
 .DOPBSPCalendar-outer-sidebar .dopbsp-module .dopbsp-cart-wrapper .dopbsp-cart td{
     border: none !important;
     display: table-cell;
-    font-family: 'Open Sans', sans-serif;
+    
     font-size: 13px;
     font-weight: 300;
     line-height: 15px;
@@ -2284,7 +2342,7 @@
 .DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-month,
 .DOPBSPCalendar-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-year{
     color: #ffffff !important;
-    font-family: 'Open Sans', sans-serif !important;
+    
     font-size: 15px !important;
     font-weight: 300 !important;
     line-height: 38px !important;
@@ -2311,7 +2369,7 @@
     border: 1px solid #c9c9c9 !important;
     border-top: none !important;
     color: #ffffff !important;
-    font-family: 'Open Sans', sans-serif !important;
+    
     font-size: 13px !important;
     font-weight: 300 !important;
     line-height: 18px !important;
@@ -2335,7 +2393,7 @@
     border: 0 !important;
     color: #acacac !important;
     display: block !important;
-    font-family: 'Open Sans', sans-serif !important;
+    
     font-size: 13px !important;
     font-weight: 300 !important;
     line-height: 19px !important;
@@ -2380,7 +2438,7 @@
 }
 
 .DOPBSPCalendar-info-message .dopbsp-text{
-    font-family: 'Open Sans', sans-serif;
+    
     font-size: 14px;
     font-weight: 300;
     line-height: 20px;
@@ -2388,7 +2446,7 @@
 }
 
 .DOPBSPCalendar-info-message .dopbsp-timer{
-    font-family: 'Open Sans', sans-serif;
+    
     font-size: 14px;
     font-weight: 300;
     height: 20px;
@@ -2468,7 +2526,7 @@
     border: 1px solid #464646;
     color: #acacac;
     display: none;
-    font-family: 'Open Sans', sans-serif;
+    
     font-size: 12px;
     left: 0px;
     line-height: 20px;
@@ -2531,3 +2589,69 @@
 /*
  * ***************************************************************************** End retina.
  */
+
+
+ @media (max-width: 620px), (max-width: 812px) and (max-height: 415px){
+
+    .DOPBSPCalendar-container {
+        max-width: 345px !important;
+    }
+
+    .dopbsp-week {
+        font-family: Museo Cyrl;
+        margin: 0;
+        overflow: hidden;
+        background: #fff;
+        display: grid;
+        padding-top: 25px;
+        grid-template-columns: repeat(7, 1fr);
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
+    }
+     
+    .DOPBSPCalendar-navigation .dopbsp-month-year {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 9px;
+    }
+
+    .DOPBSPCalendar-navigation {
+        height: 58px;
+    }
+
+    .DOPBSPCalendar-navigation .dopbsp-next-btn {
+        right: -12px;
+        top: -14px;
+    }
+
+    .DOPBSPCalendar-navigation .dopbsp-previous-btn {
+        left: -12px;
+        top: -14px;
+    }
+
+    .DOPBSPCalendar-navigation .dopbsp-next-btn::after,
+    .DOPBSPCalendar-navigation .dopbsp-next-btn::before,
+    .DOPBSPCalendar-navigation .dopbsp-previous-btn::before,
+    .DOPBSPCalendar-navigation .dopbsp-previous-btn::after {
+        width: 2px;
+    }
+    
+    .dopbsp-week .dopbsp-day {
+        width:49px !important;
+    }
+
+    .DOPBSPCalendar-month {
+        width: 345px;
+        background: #fff;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        justify-self: center;
+        align-self: center;
+        background-color: white;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+ }

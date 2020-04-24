@@ -225,6 +225,26 @@ function Calendar () {
 
 Calendar();
 
+//Sort popup
+
+function houseSort () {
+  let sort = document.querySelector('.sort')
+  let sortList = document.querySelector('.catalog__sort')
+  if(sort!=null) {
+    sort.addEventListener('click', () => {
+      sortList.classList.add('modal__show');
+    });
+window.addEventListener('keydown', function(evt) {
+  if(evt.keyCode===27) {
+    if(sortList.classList.contains('modal__show')) {
+      sortList.classList.remove('modal__show');
+    }
+  }
+});
+  }
+};
+
+houseSort();
 //Search popup
 
 var link = document.querySelector('.search');
