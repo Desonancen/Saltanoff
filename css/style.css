@@ -2127,6 +2127,8 @@ a {
 
 }
 
+
+
 @media(max-width:1440px) {
     .choose__wave {
         top: 15%;
@@ -2139,15 +2141,21 @@ a {
 
     .header__title {
         font-size: 58px;
+        margin-right: 160px;
     }
 
     .main__form {
         zoom: 0.9;
         left: 618px;
+        top: 54%;
     }
     /*About*/
     .t-espania{
         left: 6%;
+    }
+
+    .header__description {
+        padding: 0;    
     }
 }
 
@@ -2155,6 +2163,12 @@ a {
 
     .header__title {
         font-size: 44px;
+    }
+
+    .main__form {
+        zoom: 0.8;
+        left: 690px;
+        top: 54%;
     }
 
     .header__description {
@@ -2293,7 +2307,7 @@ a {
 
     .main__form {
         zoom: 0.7;
-        left: 759px;
+        left: 740px;
     }
 
     .slider__dots {
