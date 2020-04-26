@@ -11,18 +11,18 @@
   <link rel="stylesheet" href="./espana-calendar_files/object-calendar.css">
   <link rel="stylesheet" href="./espana-calendar_files/fonts.css">
 
-<script type="text/javascript" src="./espana-calendar_files/jquery-1.12.2.min.js.Без названия"></script>
-<script type="text/javascript" src="./espana-calendar_files/jquery-ui.1.11.1.js.Без названия"></script>
+<script  src="./espana-calendar_files/jquery-1.12.2.min.js"></script>
+<script src="./espana-calendar_files/jquery-ui.1.11.1.js"></script>
 
-<style type="text/css">@import "/jquery-ui.css";</style> 
-<link type="text/css" rel="stylesheet" href="./espana-calendar_files/ui.datepick.css">
-<link type="text/css" rel="stylesheet" href="./espana-calendar_files/jquery.datepick.css">
-<style type="text/css">@import "/css/jquery-ui-timepicker-addon.css";</style> 
+<style rel="stylesheet">@import "/jquery-ui.css";</style> 
+<link rel="stylesheet" rel="stylesheet" href="./espana-calendar_files/ui.datepick.css">
+<link rel="stylesheet" rel="stylesheet" href="./espana-calendar_files/jquery.datepick.css">
+<style rel="stylesheet">@import "/css/jquery-ui-timepicker-addon.css";</style> 
 
-<script src="./espana-calendar_files/jquery.plugin.min.js.Без названия"></script>
-<script type="text/javascript" src="./espana-calendar_files/jquery.datepick.min.js.Без названия"></script>
-<script type="text/javascript" src="./espana-calendar_files/jquery.datepick-ru.js.Без названия"></script>
-<script type="text/javascript" src="./espana-calendar_files/jquery-ui-timepicker-addon.js.Без названия"></script>
+<script src="./espana-calendar_files/jquery.plugin.min.js"></script>
+<script  src="./espana-calendar_files/jquery.datepick.min.js"></script>
+<script src="./espana-calendar_files/jquery.datepick-ru.js"></script>
+<script src="./espana-calendar_files/jquery-ui-timepicker-addon.js"></script>
 
 <script>
 function GotoComment(id) {
@@ -73,7 +73,7 @@ $(document).ready(function() {
       function calendarControll() {
         if ($(window).width() <= 480) {
           $('.dopbsp-month-year').addClass('act');
-          $('.DOPBSPCalendar-container').css('width','280px');
+          $('.DOPBSPCalendar-container').css('width','345px');
           $('.dopbsp-body').css('height','21px');
           $('.dopbsp-bind-middle').css('width','36px');
           $('.DOPBSPCalendar-day').css('width','38px');
@@ -95,7 +95,7 @@ $(document).ready(function() {
           var q = $('.dopbsp-week .dopbsp-day').each(function () {
             $(this).html($(this).attr('data-day-dop'));
           });
-          $('.dopbsp-week .dopbsp-day').css('width','116px');
+          $('.dopbsp-week .dopbsp-day').css('width','auto');
         }
       }
       calendarControll();
@@ -122,13 +122,13 @@ $(document).ready(function() {
           </div>
           <div class="DOPBSPCalendar-calendar">
              <div class="dopbsp-week">
-                  <div class="dopbsp-day" data-day-dop="Понедельник" data-day-dop-mob="Пн" style="width: 116px;">Пн</div>
-                  <div class="dopbsp-day" data-day-dop="Вторник" data-day-dop-mob="Вт" style="width: 116px;">Вт</div>
-                  <div class="dopbsp-day" data-day-dop="Среда" data-day-dop-mob="Ср" style="width: 116px;">Ср</div>
-                  <div class="dopbsp-day" data-day-dop="Четверг" data-day-dop-mob="Чт" style="width: 116px;">Чт</div>
-                  <div class="dopbsp-day" data-day-dop="Пятница" data-day-dop-mob="Пт" style="width: 116px;">Пт</div>
-                  <div class="dopbsp-day" data-day-dop="Суббота" data-day-dop-mob="Суб" style="width: 116px;">Сб</div>
-                  <div class="dopbsp-day" data-day-dop="Воскресенье" data-day-dop-mob="Вск" style="width: 116px;">Нд</div>
+                  <div class="dopbsp-day" data-day-dop="Пн" data-day-dop-mob="Пн" style="width: 116px;">Пн</div>
+                  <div class="dopbsp-day" data-day-dop="Вт" data-day-dop-mob="Вт" style="width: 116px;">Вт</div>
+                  <div class="dopbsp-day" data-day-dop="Ср" data-day-dop-mob="Ср" style="width: 116px;">Ср</div>
+                  <div class="dopbsp-day" data-day-dop="Чт" data-day-dop-mob="Чт" style="width: 116px;">Чт</div>
+                  <div class="dopbsp-day" data-day-dop="Пт" data-day-dop-mob="Пт" style="width: 116px;">Пт</div>
+                  <div class="dopbsp-day" data-day-dop="Суб" data-day-dop-mob="Суб" style="width: 116px;">Сб</div>
+                  <div class="dopbsp-day" data-day-dop="Вск" data-day-dop-mob="Вск" style="width: 116px;">Вск</div>
               </div>
               <div class="DOPBSPCalendar-month" id="DOPBSPCalendar-month-1143827">
 		<div class="DOPBSPCalendar-day dopbsp-past-day" iid="" style="width: 116px;">
@@ -139,11 +139,12 @@ $(document).ready(function() {
                       <div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px;">
                           <div class="dopbsp-head">
                               <div class=" dopbsp-none"></div>
-                              <div class=" dopbsp-none"></div>
+							  <div class=" dopbsp-none"></div>
+							  <div class="dopbsp-day">30</div>
                               
                           </div>
                           <div class="dopbsp-body" style="height: 62px;">
-	                      	<div class="dopbsp-day">30</div>
+
 	                        <div class="dopbsp-none"></div>
 	                          <div class="dopbsp-none"></div>
 	                          <div class="dopbsp-price">&nbsp;</div>
@@ -166,10 +167,10 @@ $(document).ready(function() {
                           <div class="dopbsp-head">
                               <div class=" dopbsp-none"></div>
                               <div class=" dopbsp-none"></div>
-                              
+							  <div class="dopbsp-day">31</div>
                           </div>
                           <div class="dopbsp-body" style="height: 62px;">
-                          <div class="dopbsp-day">31</div>
+
                               <div class="dopbsp-none"></div>
                               <div class="dopbsp-none"></div>
                               <div class="dopbsp-price">&nbsp;</div>
@@ -190,10 +191,11 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
 			<div class="dopbsp-head">
+					<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">1</div>
 				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
-			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">1</div>
+
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
 			</div>
@@ -211,10 +213,11 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
 			<div class="dopbsp-head">
+					<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">2</div>
 				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
-			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">2</div>
+
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
 			</div>
@@ -232,10 +235,12 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
 			<div class="dopbsp-head">
+					<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">3</div>
 				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
+
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
-			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">3</div>
+
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
 			</div>
@@ -253,11 +258,35 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
 			<div class="dopbsp-head">
+					<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">4</div>
+				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
+
+			</div>	
+			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
+
+				<div class="dopbsp-price"></div>
+				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
+			</div>
+		</div>
+	        <div class="dopbsp-bind-right">
+			<div class="dopbsp-head"></div>
+	                <div class="dopbsp-body" style="height: 62px;"></div>
+	        </div>
+	</div>
+	
+	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-available" iid="" style="width: 116px;">
+                <div class="dopbsp-bind-left">
+                  <div class="dopbsp-head"></div>
+                  <div class="dopbsp-body" style="height: 62px;"></div>
+                </div>
+		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
+			<div class="dopbsp-head">
+					<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">5</div>
 				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
 				
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
-			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">4</div>
+			
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
 			</div>
@@ -275,11 +304,11 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
 			<div class="dopbsp-head">
+					<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">6</div>
 				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
-				
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
-			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">5</div>
+			
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
 			</div>
@@ -297,10 +326,11 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
 			<div class="dopbsp-head">
+					<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">7</div>
 				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
-			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">6</div>
+			
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
 			</div>
@@ -318,10 +348,11 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
 			<div class="dopbsp-head">
+					<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">8</div>
 				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
-			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">7</div>
+			
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
 			</div>
@@ -339,10 +370,11 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
 			<div class="dopbsp-head">
+					<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">9</div>
 				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
-			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">8</div>
+			
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
 			</div>
@@ -360,10 +392,11 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
 			<div class="dopbsp-head">
+					<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">10</div>
 				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
-			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">9</div>
+			
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
 			</div>
@@ -381,10 +414,11 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
 			<div class="dopbsp-head">
+					<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">11</div>
 				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
-			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">10</div>
+			
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
 			</div>
@@ -402,10 +436,11 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
 			<div class="dopbsp-head">
+					<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">12</div>
 				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
-			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">11</div>
+			
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
 			</div>
@@ -423,10 +458,11 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
 			<div class="dopbsp-head">
+					<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">13</div>
 				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
-			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">12</div>
+			
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
 			</div>
@@ -444,31 +480,11 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
 			<div class="dopbsp-head">
+					<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">14</div>
 				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
-			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">13</div>
-				<div class="dopbsp-price"></div>
-				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
-			</div>
-		</div>
-	        <div class="dopbsp-bind-right">
-			<div class="dopbsp-head"></div>
-	                <div class="dopbsp-body" style="height: 62px;"></div>
-	        </div>
-	</div>
-	
-	<div class="DOPBSPCalendar-day dopbsp-curr-month dopbsp-available" iid="" style="width: 116px;">
-                <div class="dopbsp-bind-left">
-                  <div class="dopbsp-head"></div>
-                  <div class="dopbsp-body" style="height: 62px;"></div>
-                </div>
-		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
-			<div class="dopbsp-head">
-				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
-			</div>	
-			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
-			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">14</div>
+			
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
 			</div>
@@ -486,10 +502,11 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
 			<div class="dopbsp-head">
-				
+					<div class="dopbsp-co dopbsp-available dopbsp-day">15</div>
+					<div class="dopbsp-ci dopbsp-booked dopbsp-day">15</div>
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-available" style="border-right: 1px solid #68ba68 !important;width: 51% !important;"></div><div class="dopbsp-ci dopbsp-booked" style="border-left: 1px solid #dd6464 !important;"></div>
-			<div class="dopbsp-co dopbsp-available dopbsp-day">15</div><div class="dopbsp-ci dopbsp-booked dopbsp-day">15</div>
+			
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available" style="width: 48%;float: left;padding-left: 3px;"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div><div class="dopbsp-available" style="width: 50%;display: inline;padding-left: 3px;"><span class="dopbsp-no-available-text" style="display: inline;">занято</span></div>
 			</div>
@@ -507,10 +524,11 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
 			<div class="dopbsp-head">
+					<div class="dopbsp-co dopbsp-booked dopbsp-day">16</div>|
 				<div class="dopbsp-ci dopbsp-booked dopbsp-day"></div>
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-booked"></div><div class="dopbsp-ci dopbsp-booked"></div>
-			<div class="dopbsp-co dopbsp-booked dopbsp-day">16</div>
+			
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">забронировано</span></div>
 			</div>
@@ -528,10 +546,11 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
 			<div class="dopbsp-head">
+					<div class="dopbsp-co dopbsp-booked dopbsp-day">17</div>
 				<div class="dopbsp-ci dopbsp-booked dopbsp-day"></div>
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-booked"></div><div class="dopbsp-ci dopbsp-booked"></div>
-			<div class="dopbsp-co dopbsp-booked dopbsp-day">17</div>
+			
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">забронировано</span></div>
 			</div>
@@ -549,11 +568,11 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
 			<div class="dopbsp-head">
-				
+					<div class="dopbsp-co dopbsp-booked dopbsp-day">18</div>
+					<div class="dopbsp-ci dopbsp-available dopbsp-day">18</div>
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-booked" style="border-right: 1px solid #dd6464 !important;width:51% !important;"></div><div class="dopbsp-ci dopbsp-available" style="border-left: 1px solid #68ba68 !important;"></div>
-			<div class="dopbsp-co dopbsp-booked dopbsp-day">18</div>
-			<div class="dopbsp-ci dopbsp-available dopbsp-day">18</div>
+
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available" style="width: 48%;float: left;padding-left: 3px;"><span class="dopbsp-no-available-text" style="display: inline;">Занято</span></div><div class="dopbsp-available" style="width: 50%;display: inline;padding-left: 3px;"><span class="dopbsp-no-available-text" style="display: inline;">Доступно</span></div>
 			</div>
@@ -571,10 +590,11 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
 			<div class="dopbsp-head">
+					<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">19</div>
 				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
-			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">19</div>
+			
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
 			</div>
@@ -614,10 +634,11 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
 			<div class="dopbsp-head">
+					<div class="dopbsp-co dopbsp-booked dopbsp-day">21</div>
 				<div class="dopbsp-ci dopbsp-booked dopbsp-day"></div>
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-booked"></div><div class="dopbsp-ci dopbsp-booked"></div>
-			<div class="dopbsp-co dopbsp-booked dopbsp-day">21</div>
+			
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">забронировано</span></div>
 			</div>
@@ -635,10 +656,11 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px; opacity:0.25; ">
 			<div class="dopbsp-head">
+					<div class="dopbsp-co dopbsp-booked dopbsp-day">22</div>
 				<div class="dopbsp-ci dopbsp-booked dopbsp-day"></div>
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-booked"></div><div class="dopbsp-ci dopbsp-booked"></div>
-			<div class="dopbsp-co dopbsp-booked dopbsp-day">22</div>
+			
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">забронировано</span></div>
 			</div>
@@ -656,11 +678,11 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px;  ">
 			<div class="dopbsp-head">
-				
+					<div class="dopbsp-co dopbsp-booked dopbsp-day">23</div>
+					<div class="dopbsp-ci dopbsp-available dopbsp-day">23</div>
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-booked" style="border-right: 1px solid #dd6464 !important;width:51% !important;"></div><div class="dopbsp-ci dopbsp-available" style="border-left: 1px solid #68ba68 !important;"></div>
-			<div class="dopbsp-co dopbsp-booked dopbsp-day">23</div>
-			<div class="dopbsp-ci dopbsp-available dopbsp-day">23</div>
+
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available" style="width: 48%;float: left;padding-left: 3px;"><span class="dopbsp-no-available-text" style="display: inline;">Занято</span></div><div class="dopbsp-available" style="width: 50%;display: inline;padding-left: 3px;"><span class="dopbsp-no-available-text" style="display: inline;">Доступно</span></div>
 			</div>
@@ -678,10 +700,11 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px;  ">
 			<div class="dopbsp-head">
+					<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">24</div>
 				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
-			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">24</div>
+			
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
 			</div>
@@ -699,10 +722,11 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px;  ">
 			<div class="dopbsp-head">
+					<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">25</div>
 				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
-			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">25</div>
+			
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
 			</div>
@@ -720,10 +744,11 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px;  ">
 			<div class="dopbsp-head">
+					<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">26</div>
 				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
-			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">26</div>
+			
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
 			</div>
@@ -741,10 +766,11 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px;  ">
 			<div class="dopbsp-head">
+					<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">27</div>
 				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
-			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">27</div>
+			
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
 			</div>
@@ -762,10 +788,11 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px;  ">
 			<div class="dopbsp-head">
+					<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">28</div>
 				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
-			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">28</div>
+			
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
 			</div>
@@ -783,10 +810,11 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px;  ">
 			<div class="dopbsp-head">
+					<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">29</div>
 				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
-			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">29</div>
+			
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
 			</div>
@@ -804,10 +832,11 @@ $(document).ready(function() {
                 </div>
 		<div class="dopbsp-bind-middle dopbsp-group0" style="width: 132px;  ">
 			<div class="dopbsp-head">
+					<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">30</div>
 				<div class="dopbsp-ci dopbsp-day dopbsp-available dopbsp-day"></div>
 			</div>	
 			<div class="dopbsp-body" style="height: 62px;"><div class="dopbsp-co dopbsp-day dopbsp-available"></div><div class="dopbsp-ci dopbsp-day dopbsp-available"></div>
-			<div class="dopbsp-co dopbsp-day dopbsp-available dopbsp-day">30</div>
+			
 				<div class="dopbsp-price"></div>
 				<br class="DOPBSPCalendar-clear"><div class="dopbsp-available"><span class="dopbsp-no-available-text" style="display: inline;">доступно</span></div>
 			</div>
