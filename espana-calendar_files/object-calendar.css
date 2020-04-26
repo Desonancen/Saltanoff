@@ -146,46 +146,47 @@
 
 .DOPBSPCalendar-navigation .dopbsp-next-btn::before {
     content: "";
-    width: 3px;
-    height: 12px;
+    width: 2px;
+    height: 18px;
     background-color: #000;
     position: absolute;
-    top: 33px;
+    top: 29px;
     right: 29px;
     transform: rotate(45deg);
 }
 
+
 .DOPBSPCalendar-navigation .dopbsp-next-btn::after {
     content: "";
-    width: 3px;
-    height: 12px;
+    width: 2px;
+    height: 18px;
     background-color: #000;
     position: absolute;
-    top: 26px;
+    top: 18px;
     right: 29px;
     transform: rotate(-45deg);
 } 
 
 .dopbsp-previous-btn::before {
     content: "";
-    width: 3px;
-    height: 12px;
+    width: 2px;
+    height: 18px;
     background-color: #000;
     position: absolute;
-    top: 33px;
+    top: 18px;
     right: 29px;
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
 }
 
 .dopbsp-previous-btn::after {
     content: "";
-    width: 3px;
-    height: 12px;
+    width: 2px;
+    height: 18px;
     background-color: #000;
     position: absolute;
-    top: 26px;
+    top: 29px;
     right: 29px;
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
 } 
 
 .DOPBSPCalendar-navigation .dopbsp-add-btn .dopbsp-info,
@@ -396,7 +397,7 @@
 }
 
 .DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-head .dopbsp-day{
-    color: #ffffff;
+    color: #000;
     float: left;
     
     font-size: 12px !important;
@@ -406,6 +407,8 @@
     padding: 0;
     position: relative !important;
 }
+
+
 
 .DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-head .dopbsp-co{
     background: #68ba68; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
@@ -421,7 +424,7 @@
     position: absolute !important;
     top: -1px;
     width: 50% !important;
-    color: #ffffff;
+    color: #000;
     
     text-align: left;
     text-indent: 4px;
@@ -441,7 +444,7 @@
     position: absolute !important;
     top: -1px;
     width: 50% !important;
-    color: #ffffff;
+    color: #000;
     
     text-align: left;
     text-indent: 4px;
@@ -619,13 +622,14 @@
 }
 
 .DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-body .dopbsp-available{
-    color: #acacac;
+  
     
     font-size: 11px !important;
     font-weight: 300;
     line-height: 18px !important;
     padding: 0 0 0 5px;
     width: 100%;
+    text-transform:capitalize;
 }
 @media (max-width: 480px) {
 	.DOPBSPCalendar-day .dopbsp-bind-middle .dopbsp-body .dopbsp-available{
@@ -2584,7 +2588,6 @@
 }
 .dopbsp-month-year.act {
   margin-top: 45px;
-  text-align: left;
 }
 /*
  * ***************************************************************************** End retina.
@@ -2593,9 +2596,9 @@
 
  @media (max-width: 620px), (max-width: 812px) and (max-height: 415px){
 
-    .DOPBSPCalendar-container {
+    /*.DOPBSPCalendar-container {
         max-width: 345px !important;
-    }
+    }*/
 
     .dopbsp-week {
         font-family: Museo Cyrl;
@@ -2634,8 +2637,24 @@
     .DOPBSPCalendar-navigation .dopbsp-next-btn::before,
     .DOPBSPCalendar-navigation .dopbsp-previous-btn::before,
     .DOPBSPCalendar-navigation .dopbsp-previous-btn::after {
-        width: 2px;
+        width: 1px;
+        height: 12px;
     }
+
+    .DOPBSPCalendar-navigation .dopbsp-next-btn::before,
+    .DOPBSPCalendar-navigation .dopbsp-previous-btn::after  {
+        top:31px;
+    }
+
+    .DOPBSPCalendar-navigation .dopbsp-next-btn::after,
+    .DOPBSPCalendar-navigation .dopbsp-previous-btn::before {
+        top:23px;
+    }
+
+    .DOPBSPCalendar-navigation .dopbsp-previous-btn {
+        left:33px;
+    }
+
     
     .dopbsp-week .dopbsp-day {
         width:49px !important;

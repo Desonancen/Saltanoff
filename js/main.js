@@ -207,11 +207,18 @@ InfoDetails();
 function Calendar () {
   let calendarButton = document.querySelector('.house__calendar');
   let calendarModal = document.querySelector('.calendar');
+  let close = document.querySelector(".modal__close");
   if(calendarButton!=null) {
     calendarButton.addEventListener('click', () => {
      calendarModal.classList.add('popup');
      calendarModal.classList.remove('noDisplay');
     });
+    close.addEventListener("click", function (evt){
+      evt.preventDefault();
+      calendarModal.classList.remove("popup");
+      calendarModal.classList.add('noDisplay');
+
+      });
     window.addEventListener("keydown", function (evt) {
       if(evt.keyCode===27) {
           if(calendarModal.classList.contains("popup")){

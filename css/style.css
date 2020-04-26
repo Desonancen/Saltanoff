@@ -1973,6 +1973,14 @@ a {
     bottom: 11px;
 }
 
+iframe {
+    height:797px;
+}
+
+.calendar__title {
+    display: none;
+}
+
 /*Reviews*/
 
 .reviews__block {
@@ -3659,6 +3667,18 @@ a {
         margin-top: -95px;
     }
 
+    iframe {
+        height:525px;
+    }
+
+    .calendar {
+        padding: 0;
+    }
+
+    .popup {
+        height: auto;
+    }
+
     
     /*Sort popup*/
     .sort {
@@ -3701,6 +3721,18 @@ a {
     .catalog__sort__by {
         font-size: 22px;
         line-height: 25px;
+    }
+
+    .calendar__title {
+        display: initial;
+        color: #fff;
+        position: fixed;
+        top: 16%;
+        left: 15px;
+    }
+
+    .calendar .modal__close {
+        top:17%;
     }
 
     @media (max-width: 812px) and (max-height: 415px){
