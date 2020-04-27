@@ -38,10 +38,6 @@ h1, h2, h3, h4, h5, h6, p, img{
     margin: 0;
 }
 
-.yellow {
-    color: rgb(245, 186, 33);
-}
-
 a {
     text-decoration:none;
 }
@@ -175,7 +171,6 @@ a {
     line-height: 25px;
     color: rgb(244, 61, 61);
 }
-
 
 
 .header__phone~.yellow {
@@ -1067,9 +1062,10 @@ a {
 
 .rent__phone {
     margin-left: auto;
+    color: #F43D3D;
 }
 
-.rent__phone .yellow {
+.rent__phone.yellow {
     margin-left: 30px;
 }
 
@@ -1373,6 +1369,7 @@ a {
 
 .s__image-1{
     position: absolute;
+    top: 135px;
 }
 .s__image-2{
     position: absolute;
@@ -1424,7 +1421,7 @@ a {
 }
 
 .s_right{
-    margin-top: 95px;
+    margin-top: 115px;
     overflow: hidden;
 }
 
@@ -2086,6 +2083,10 @@ iframe {
 }
 
 
+.yellow {
+    color: rgb(245, 186, 33);
+}
+
 /*Media*/
 
 
@@ -2436,7 +2437,7 @@ iframe {
     }
     .s__image-2{
         width: 321px;
-        top: 362px;
+        top: 393px;
         left: 253px;
     }
     .about__image{
