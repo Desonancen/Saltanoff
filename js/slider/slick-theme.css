@@ -213,7 +213,7 @@
 
     .slick-prev, .slick-next {
         z-index:10000;
-        top: 890px;
+        top: 986px;
     }
 
     .slick-prev {
@@ -222,7 +222,7 @@
     }
 
     .slick-next {
-        right: 11%;
+        right: 22%;
         height: 46px;
     }
 
