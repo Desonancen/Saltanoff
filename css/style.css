@@ -1,3 +1,20 @@
+@font-face {
+    font-family: 'Museo Cyrl';
+    src: url('fonts/MuseoSansCyrl-300.eot');
+    src: local('☺'), url('fonts/MuseoSansCyrl-300.woff') format('woff'), url('fonts/MuseoSansCyrl-300.ttf') format('truetype'), url('fonts/MuseoSansCyrl-300.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Cyrl';
+    src: url('fonts/Museocyrl500.eot');
+    src: local('☺'), url('fonts/Museocyrl500.woff') format('woff'), url('fonts/Museocyrl500.ttf') format('truetype'), url('fonts/Museocyrl500.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
     font-family: 'Museo Cyrl';
     font-style: normal;
@@ -960,6 +977,7 @@ a {
     max-width: 461px;
     margin-left: 41px;
     margin-bottom: 24px;
+    font-weight: 300;
 }
 
 .news__form-mobile{
@@ -1854,8 +1872,6 @@ a {
     background-color: rgba(0,0,0,0.7);
     color: #fff;
     z-index: 1000;
-
-    text-align: center;
     right: 0;
     height: 725px;
 }
@@ -1867,6 +1883,7 @@ a {
     margin-bottom: 30px;
     padding-bottom: 20px;
     padding-top: 40px;
+    text-align: center;
 }
 
 .info>.proposition__details>.detail__items {
@@ -1952,8 +1969,10 @@ a {
 
 .house__btn {
     padding: 11px 23px;
-    margin-left: 52px;
-    margin-top: 17px;
+    
+    position: absolute;
+    right: 8%;
+    bottom: 7%;
 }
 
 .info__price>.proposition__description {
@@ -3113,10 +3132,17 @@ iframe {
     .social {
         margin-bottom: 30px;
     }
-
+    /*Contacts*/
+    .c_block-1_item{
+        margin-left: 20px;
+    }
+    .contacts__headline{
+        top: -73px !important;
+        left: 121px !important;
+        color: #fff !important;
+    }
 
     /*About page*/
-
     ._nav{
         display: none;
     }
@@ -3370,7 +3396,7 @@ iframe {
         font-size: 30px;
         line-height: 35px;
         color: #F43D3D;
-        font-weight: 300;
+        font-weight: normal;
         max-width: 180px;
     }
     
@@ -3833,6 +3859,39 @@ iframe {
     }
     .filters{
         margin-left: 20%;
+    }
+
+}
+
+@media (max-width: 353px){
+    .s__image-1{
+        width: 229px;
+        top: 584px;
+    }
+    .s__image-2 {
+        width: 200px;
+        top: 735px;
+    }
+
+}
+
+@media (max-width: 342px){
+    .s__image-1{
+        top: 689px;
+    }
+    .s__image-2 {
+        top: 820px;
+    }
+    .header__logo{
+        width: 76px;
+        height: 65px;
+        margin: 10px;
+    }
+    .language {
+        margin-left: 25px;
+    }
+    .header__left{
+        height: 85px;
     }
 
 }
