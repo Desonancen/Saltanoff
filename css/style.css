@@ -2616,6 +2616,57 @@ iframe {
     body {
         zoom: 0.9;
     }
+    .review__sliders {
+        margin-left: 0;
+    }
+    .header__title {
+        margin-top: 50px;
+    }
+    .main__form {
+    zoom: 0.55;
+    left: 737px;
+    top: 57%;
+    }
+
+    .choose {
+        padding-top: 229px;
+    }
+
+    .news {
+        right: 8%;
+    }
+
+    .rent__info {
+        margin-bottom: 29px;
+    }
+
+    .footer__leaf--right {
+        display: none;
+    }
+
+    .justnow__text-right {
+        zoom:0.8;
+    }
+    
+    .justnow__img-left {
+        zoom:0.7;
+    }
+
+    .leaf_right_justnow {
+        display: none;
+    }
+
+    .rent {
+        padding-top: 260px;
+    }
+
+    .leaf__bottom {
+        display: none;
+    }
+
+    .contacts {
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 620px), (max-width: 812px) and (max-height: 415px){
@@ -3858,7 +3909,9 @@ iframe {
         margin-left: 20%;
     }
 
+
 }
+
 
 @media (max-width: 353px){
     .s__image-1{
