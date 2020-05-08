@@ -78,52 +78,64 @@ function findClick(){
   }
 
   selectSingle_title[0].addEventListener('click', () => {
+    CloseAll(0);
     SelectForm(0);
   });
 
   selectSingle_title[1].addEventListener('click', () => {
+    CloseAll(1);
     SelectForm(1);
   });
 
   selectSingle_title[2].addEventListener('click', () => {
+    CloseAll(2);
     SelectForm(2);
   });
 
   selectSingle_title[3].addEventListener('click', () => {
+    CloseAll(3);
     SelectForm(3);
   });
 
   selectSingle_title[4].addEventListener('click', () => {
+    CloseAll(4);
     SelectForm(4);
   });
 
   selectSingle_title[5].addEventListener('click', () => {
+    CloseAll(5);
     SelectForm(5);
   });
 
   selectSingle_title[6].addEventListener('click', () => {
+    CloseAll(6);
     SelectForm(6);
   });
 
   if (document.getElementById('catalog') != null)
   {
     selectSingle_title[7].addEventListener('click', () => {
+      CloseAll(7);
       SelectForm(7);
     });
 
     selectSingle_title[8].addEventListener('click', () => {
+      CloseAll(8);
       SelectForm(8);
     });
 
     selectSingle_title[9].addEventListener('click', () => {
+      CloseAll(9);
       SelectForm(9);
     });
 
     selectSingle_title[10].addEventListener('click', () => {
+      CloseAll(10);
       SelectForm(10);
     });
 
     selectSingle_title[11].addEventListener('click', () => {
+      CloseAll(11);
       SelectForm(11);
     });
   }
@@ -157,6 +169,18 @@ function SelectForm(i) {
     reset.addEventListener('click', () => {
       selectSingle_title.textContent = selectSingle_title.getAttribute('data-default');
     });
+  }
+}
+
+function CloseAll(n)
+{
+  for (let i = 0; i < select_form.length; i++)
+  {
+    if (n!=i)
+    {
+      let selectSingle = document.querySelector(select_form[i]);
+      selectSingle.setAttribute('data-state', '');
+    }
   }
 }
 
@@ -294,7 +318,7 @@ form.addEventListener("submit", function (evt) {
 
 
 
-const dropdown = document.querySelector('.select__form');
+/*const dropdown = document.querySelector('.select__form');
 const dropdown_content=document.getElementById('town__content');
   dropdown.addEventListener('mouseenter', _open)
   dropdown.addEventListener('mouseout', _close)
@@ -308,4 +332,4 @@ function _open() {
 }
 function _close() {
   dropdown.setAttribute('data-state', '');
-}
+}*/
