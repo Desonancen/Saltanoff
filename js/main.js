@@ -291,3 +291,21 @@ form.addEventListener("submit", function (evt) {
     popup.classList.add("modal-error");
   }
 });*/
+
+
+
+const dropdown = document.querySelector('.select__form');
+const dropdown_content=document.getElementById('town__content');
+  dropdown.addEventListener('mouseenter', _open)
+  dropdown.addEventListener('mouseout', _close)
+  dropdown_content.addEventListener('mouseenter', _open)
+  dropdown_content.addEventListener('mouseout', _close)
+
+
+
+function _open() {
+  dropdown.setAttribute('data-state', 'active');
+}
+function _close() {
+  dropdown.setAttribute('data-state', '');
+}
